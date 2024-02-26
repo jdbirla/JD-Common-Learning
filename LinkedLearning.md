@@ -161,3 +161,42 @@ Centralized Control (Master) with Multiple Worker Nodes (Slaves).
 Application: Ubiquitous in distributed computing, optimizing parallel processing and load balancing.
 
 ![1706103060616](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/be177349-23dc-4156-88f4-65c1bbd158ad)
+
+
+## Core Components of System Architecture
+[Distributed Messaging Queues]
+Enables seamless communication between different components of a system, ensuring efficient message exchange.
+
+[DNS (Domain Name System)]
+Facilitates the translation of user-friendly domain names into IP addresses, enabling browsers to locate web servers on the internet.
+
+[Load Balancer]
+Distributes incoming web traffic across multiple servers, ensuring optimal resource utilization and preventing overload on individual servers.
+
+[Distributed Caching]
+Stores frequently used data efficiently, reducing the need for repeated retrieval from slower databases.
+
+[Database]
+Organizes, stores, and retrieves data, serving as a central hub for various applications and services.
+
+[Distributed Task Scheduler]
+Efficiently organizes and assigns tasks across different system components, ensuring coordinated operations.
+
+[Observability]
+Provides insights into system performance, aiding issue identification and maintaining optimal functioning.
+
+[Unstructured Data Storage]
+Accommodates various data types without requiring predefined structures, offering flexibility.
+
+[Scaling Services]
+Enables the system to handle increased traffic and demand by expanding its capacity.
+
+[Publish-Subscribe Model]
+Facilitates communication between different system parts without direct connections.
+
+[Unique ID Generator]
+Creates distinct identifiers for each piece of data, ensuring data integrity and uniqueness.
+
+[Rate-Limiting]
+Controls the flow of requests to maintain a steady and manageable pace, preventing strain on the system.
+
