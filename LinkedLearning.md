@@ -424,4 +424,37 @@ Both parties exchange "Finished" messages, confirming that the handshake is comp
 
 ![1705331828985](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/f56f48e4-6104-4899-80a7-d2e6c30ca12c)
 
+## Sorting algorithms 
+Sorting algorithms are fundamental techniques in computer science and are used to rearrange elements in a specified order. The efficiency of sorting algorithms is often evaluated based on factors like time complexity, space complexity, and stability.
+✅Bubble Sort:
+🔶 Description: Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+🔶 Time Complexity: O(n^2) in the worst and average case, O(n) in the best case (when the list is already sorted).
+🔶 Space Complexity: O(1) (in-place algorithm).
+✅ Selection Sort:
+🔶 Description: Selection sort divides the input into a sorted and an unsorted region. It repeatedly selects the smallest (or largest, depending on the order) element from the unsorted region and moves it to the sorted region.
+🔶 Time Complexity: O(n^2) regardless of input.
+🔶 Space Complexity: O(1) (in-place algorithm).
+✅ Insertion Sort:
+🔶 Description: Insertion sort builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+🔶 Time Complexity: O(n^2) in the worst and average case, O(n) in the best case.
+🔶 Space Complexity: O(1) (in-place algorithm).
+✅ Merge Sort:
+🔶 Description: Merge sort is a divide-and-conquer algorithm that divides the input array into two halves, recursively sorts them, and then merges the sorted halves.
+🔶 Time Complexity: O(n log n) in all cases.
+🔶 Space Complexity: O(n) additional space is required for the merging process.
+✅ Quick Sort:
+🔶 Description: Quick sort is another divide-and-conquer algorithm that partitions the array into two parts, with elements less than a chosen pivot on one side and elements greater on the other. The process is applied recursively to the two sub-arrays.
+🔶 Time Complexity: O(n^2) in the worst case, O(n log n) on average.
+🔶 Space Complexity: O(log n) on average for the recursive call stack.
+✅ Heap Sort:
+🔶 Description: Heap sort is based on the binary heap data structure. It first builds a max heap from the input array and repeatedly extracts the maximum element, ensuring that the remaining elements form a valid heap.
+🔶 Time Complexity: O(n log n) in all cases.
+🔶 Space Complexity: O(1) (in-place algorithm).
+Sorting algorithms are chosen based on the specific requirements of the application and the characteristics of the data to be sorted. Different algorithms may be more suitable for different scenarios, depending on factors such as data size, stability, and memory constraints.
+
+![1705509378264](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/a280c10d-a4b6-48eb-a070-19616b9527a3)
+
+## 
+
+
 ## 
