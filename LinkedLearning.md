@@ -109,3 +109,29 @@
 
 If you liked this, you'll love Hungry Minds, my free weekly newsletter curating the best deep dives, trends and tools to grow as a software engineer: https://hungryminds.dev
 
+## Choosing the right database for your needs? Consider these points:
+1 ACID Transactions (OLTP): RDS, Aurora, Azure SQL Database
+
+2 Relational (Cloud Agnostic): SQL Server, Oracle, Cockroach, MySQL, PostgreSQL
+
+3 Analytics (OLAP) Columnar: RedShift, Azure Synapse, Snowflake, BigQuery, Databricks, HIVE
+
+4 Memory-store In-memory: Redis, Memcached, Hazelcast, Ignite
+
+5 Key-Value: Redis, DynamoDB, CosmosDB, BigTable, RocksDB, Ignite
+
+6 Wide Column Data Type: HBase, Cassandra, ScyllaDB
+
+7 Semi-Structured: CosmosDB, BigTable, BigQuery, HBase, Cassandra
+
+8 Time Series: CosmosDB, BigTable, BigQuery, TimescaleDB, OpenTSDB, InfluxDB
+
+9 Graph: Neptune, CosmosDB, JanusGraph, Table Graph, Solr, PostGIS, MongoDB (GeoJSON), OrientDB, Neo4J, Tiger Graph
+10 Document: CosmosDB, Firestore, MongoDB, Couchbase
+
+11 Full Text Search: Cloud-Search, Cognitive Search, Elastic-Search, Solr, Elassandra
+
+12 Unstructured (Rich) Text: S3, Blob Storage, Cloud Storage, HDFS, Blob
+
+![1706096041699](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/86629c73-2387-4d2c-95c7-b3de74c11843)
+
