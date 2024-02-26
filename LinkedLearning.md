@@ -669,4 +669,103 @@ try (Connection connection = DriverManager.getConnection(url, username, password
   
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/17d4f67f-9115-4b3a-8af0-193d321eaaf2)
 
+## 𝗢𝗽𝘁𝗶𝗺𝗶𝘀𝗲 𝗬𝗼𝘂𝗿 𝗗𝗼𝗰𝗸𝗲𝗿 𝗪𝗼𝗿𝗸𝗳𝗹𝗼𝘄 🚀💻
+
+Supercharge your Docker skills with these key commands:
+
+𝟭. 𝗿𝘂𝗻: Launch containers from images.
+𝟮. 𝘀𝘁𝗼𝗽: Gracefully halt running containers.
+𝟯. 𝘀𝘁𝗮𝗿𝘁: Revitalize stopped containers.
+𝟰. 𝗲𝘅𝗲𝗰: Execute commands within containers.
+𝟱. 𝗽𝗼𝗿𝘁: Identify a container's public-facing port.
+𝟲. 𝗿𝗲𝗻𝗮𝗺𝗲: Give containers new identities.
+𝟳. 𝗽𝗮𝘂𝘀𝗲/𝘂𝗻𝗽𝗮𝘂𝘀𝗲: Suspend/resume container processes.
+𝟴. 𝗸𝗶𝗹𝗹: Halt running containers.
+𝟵. 𝗯𝘂𝗶𝗹𝗱: Create custom Docker images.
+𝟭𝟬. 𝘁𝗼𝗽: Display running processes of a container.
+𝟭𝟭. 𝗰𝗽: Copy files between containers and local system.
+𝟭𝟮. 𝗿𝗺: Remove stopped containers.
+𝟭𝟯. 𝘀𝘁𝗮𝘁𝘀: Monitor real-time container resource usage.
+𝟭𝟰. 𝗽𝘀: View container processes.
+𝟭𝟱. 𝗵𝗶𝘀𝘁𝗼𝗿𝘆: View image evolution history.
+𝟭𝟲. 𝗶𝗺𝗮𝗴𝗲 𝗹𝘀: List available Docker images.
+𝟭𝟳. 𝗹𝗼𝗴𝘀: Retrieve and analyze container logs.
+𝟭𝟴. 𝘃𝗲𝗿𝘀𝗶𝗼𝗻: Check Docker version.
+𝟭𝟵. 𝗶𝗻𝗳𝗼: Fetch crucial Docker system information.
+𝟮𝟬. 𝗶𝗻𝘀𝗽𝗲𝗰𝘁: Explore details of containers, images, networks.
+
+
+![1704294993746](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3bc5086b-9037-4dee-866d-00c8b6550199)
+
+
+## Forget web developers/Web Designer
+Here is the list of 8 AI tool that creates your website in 5 min:
+
+1 10Web.io
+
+It helps users to build or recreate any website with AI in minutes.
+
+2 Dora
+
+Design and publish stunning 3D & animated websites effortlessly, without the need for coding.
+
+3 Durable
+
+Build a website in 30 secs using AI .
+
+4 Bookmark
+
+Get your business online in a minute
+
+5 Framer
+
+It is an amazing tool that makes it possible to create a website in less than two minutes.
+
+6 sitekickai
+
+It allows you to create beautiful landing pages. Without the need for coding, design or copywriting skills.
+
+7 Makelanding AI
+
+Make a beautiful landing page in seconds .
+
+8 Createwebsite
+
+It is not just about creating websites, it's about creating powerful, lightning-fast digital experiences.
+
+## Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained in One Diagram
+When you login to a website, your identity needs to be managed. Here is how different solutions work:
+
+- Session - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don't work well across devices.
+
+- Token - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication. No server session storage is required. But tokens need encryption/decryption.
+
+- JWT - JSON Web Tokens standardize identity tokens using digital signatures for trust. The signature is contained in the token so no server session is needed.
+
+- SSO - Single Sign On uses a central authentication service. This allows a single login to work across multiple sites.
+
+- OAuth2 - Allows limited access to your data on one site by another site, without giving away passwords.
+
+Over to you: QR code logins are gaining popularity. Do you know how it works?
+
+
+![1703745073045](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/9dadf720-9f36-4b29-9994-6ff234da87d9)
+
+
+## Top 12 Tips for API Security
+- Use HTTPS
+- Use OAuth2
+- Use WebAuthn
+- Use Leveled API Keys
+- Authorization
+- Rate Limiting
+- API Versioning
+- Whitelisting
+- Check OWASP API Security Risks
+- Use API Gateway
+- Error Handling
+- Input Validation
+
+![1703833728966](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/1766c0c9-f242-4668-8754-227cba85cc0a)
+
 ## 
