@@ -1,5 +1,42 @@
 # LinkedIn Learning
 
+# Table of contents
+
+- [LinkedIn Learning](#linkedin-learning)
+  - [𝗠𝗮𝘀𝘁𝗲𝗿𝗶𝗻𝗴 𝗗𝗲𝘃𝗢𝗽𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲](#----)
+  - [Hospital Managment SpringBoot APP](#hospital-managment-springboot-app)
+  - [List of common annotations/methods used with Spring boot testing 🔥](#list-of-common-annotationsmethods-used-with-spring-boot-testing-)
+  - [Companies List that are HIRING for 100% REMOTE.](#companies-list-that-are-hiring-for-100-remote)
+  - [Scrum](#scrum)
+  - [24 repos you can't miss out as a software engineer:](#24-repos-you-cant-miss-out-as-a-software-engineer)
+    - [Interview preparation:](#interview-preparation)
+    - [System design:](#system-design)
+    - [LLM/AI:](#llmai)
+    - [Complete roadmaps:](#complete-roadmaps)
+    - [Frontend:](#frontend)
+  - [Choosing the right database for your needs? Consider these points:](#choosing-the-right-database-for-your-needs-consider-these-points)
+  - [6 Must Know Software Architectural Patterns](#6-must-know-software-architectural-patterns)
+  - [Core Components of System Architecture](#core-components-of-system-architecture)
+  - [𝐇𝐨𝐰 𝐑𝐄𝐒𝐓 𝐀𝐏𝐈 𝐰𝐨𝐫𝐤?](#---)
+  - [Single Sign-On (SSO) explained in simple terms.](#single-sign-on-sso-explained-in-simple-terms)
+    - [𝗞𝗲𝘆 𝗣𝗹𝗮𝘆𝗲𝗿𝘀 𝗶𝗻 𝗦𝗦𝗢](#---)
+    - [𝗕𝗲𝗻𝗲𝗳𝗶𝘁𝘀 𝗼𝗳 𝗦𝗦𝗢](#--)
+    - [𝗛𝗼𝘄 𝗦𝗦𝗢 𝗪𝗼𝗿𝗸𝘀](#--)
+  - [ChatGPT Mastery Cheat Sheet](#chatgpt-mastery-cheat-sheet)
+  - [Hands-On Guide: Implementing CI/CD for your web application with AWS Codepipeline](#hands-on-guide-implementing-cicd-for-your-web-application-with-aws-codepipeline)
+  - [IBM and Meta offering Web Development Courses for everyone.🚀🚀](#ibm-and-meta-offering-web-development-courses-for-everyone)
+  - [How DNS Works - A Simplified Overview](#how-dns-works---a-simplified-overview)
+  - [Insights into SSL Certificate Workflow:](#insights-into-ssl-certificate-workflow)
+  - [Sorting algorithms](#sorting-algorithms)
+  - [Log Parsing Cheat Sheet](#log-parsing-cheat-sheet)
+  - [𝐇𝐨𝐰 𝐝𝐨 𝐩𝐫𝐨𝐭𝐨𝐜𝐨𝐥𝐬 𝐰𝐨𝐫𝐤 𝐢𝐧 𝐭𝐡𝐞 𝐓𝐂𝐏/𝐈𝐏 𝐨𝐫 𝐎𝐒𝐈 𝐌𝐨𝐝𝐞𝐥❓](#---------)
+  - [Java Exceptions](#java-exceptions)
+  - [𝗢𝗽𝘁𝗶𝗺𝗶𝘀𝗲 𝗬𝗼𝘂𝗿 𝗗𝗼𝗰𝗸𝗲𝗿 𝗪𝗼𝗿𝗸𝗳𝗹𝗼𝘄 🚀💻](#----)
+  - [Forget web developers/Web Designer](#forget-web-developersweb-designer)
+  - [Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained in One Diagram](#session-cookie-jwt-token-sso-and-oauth-20-explained-in-one-diagram)
+  - [Top 12 Tips for API Security](#top-12-tips-for-api-security)
+  - [](#)
+  - 
 ## 𝗠𝗮𝘀𝘁𝗲𝗿𝗶𝗻𝗴 𝗗𝗲𝘃𝗢𝗽𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲
 ![1706844743207](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/0f083413-adab-46d8-a0c4-0f0a4c469694)
 
