@@ -224,3 +224,97 @@ So, the next time you interact with an app on your smartphone, think about how R
 Let's keep the conversation going and demystify the tech that powers our digital world!
 
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/05d80a5f-5e68-494b-a5ed-28ddbfbc7f0f)
+
+## Single Sign-On (SSO) explained in simple terms.
+
+### 𝗞𝗲𝘆 𝗣𝗹𝗮𝘆𝗲𝗿𝘀 𝗶𝗻 𝗦𝗦𝗢
+
+1. User - The individual seeking access to applications
+2. Identity Provider (IDP) - Authenticates users (e.g. Google, Facebook)
+3. Application - The software or service the user wants to access
+
+### 𝗕𝗲𝗻𝗲𝗳𝗶𝘁𝘀 𝗼𝗳 𝗦𝗦𝗢
+
+- Simplifies access with one set of credentials
+- Enhances user experience
+- Reduces password fatigue
+- Centralizes security and access management
+- Improves security
+- Streamlines access control
+- Simplifies compliance reporting
+- Allows seamless integration
+
+### 𝗛𝗼𝘄 𝗦𝗦𝗢 𝗪𝗼𝗿𝗸𝘀
+
+- User tries to log into an application
+- Application redirects user to SSO/IDP
+- IDP authenticates user
+- IDP issues authenticated token
+- Token sent back to browser
+- Browser presents token to application
+- Application grants access without re-entering credentials
+
+This streamlined process enables single login access to multiple applications, improving convenience and security.
+
+Over to you: With SSO facilitating access across various platforms, what measures do you consider essential to maintain the integrity and security of user identities?
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/9d4a2610-84ee-4061-a416-e797ec3783c7)
+
+## ChatGPT Mastery Cheat Sheet
+Unlock the full potential of ChatGPT:
+
+𝗔𝗰𝘁 𝗮𝘀 𝗮 [𝗥𝗢𝗟𝗘]:
+• Support Representative
+• Code Debugger
+• Language Translator
+
+𝗠𝗼𝗱𝗲𝘀 𝗮𝗻𝗱 𝗥𝗼𝗹𝗲𝘀:
+• Generate Ideas for [Project]
+• Plan Schedule for [Event]
+• Edit Content for [Publication]
+
+𝗦𝗲𝘁 𝗧𝗼𝗻𝗲𝘀:
+• Formal
+• Casual
+• Enthusiastic
+
+𝗖𝗿𝗲𝗮𝘁𝗲 𝗮 𝗧𝗮𝘀𝗸:
+• Generate Code
+• Plan Outline
+• Write Story
+
+𝗗𝗲𝗳𝗶𝗻𝗲 [𝗙𝗼𝗿𝗺𝗮𝘁]:
+• Bullet Points
+• List
+• Code Snippet
+
+𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻:
+• Streamlining Processes
+• Repetitive Tasks
+• Operational Streamlining
+
+𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗣𝗿𝗼𝗺𝗽𝘁𝘀:
+• Summarize Scientific Article
+• Compile Recent Studies on [Topic]
+• Explore Recent Research Studies
+
+𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗿 𝗣𝗿𝗼𝗺𝗽𝘁𝘀:
+• Design Distinctive Logo
+• Develop Website Mockup
+• Generate Color Palette
+
+𝗠𝗮𝗿𝗸𝗲𝘁𝗲𝗿 𝗣𝗿𝗼𝗺𝗽𝘁𝘀:
+• Craft Persuasive Marketing Copy
+• Develop Tagline Ideas
+• Create Social Media Posts
+
+𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗣𝗿𝗼𝗺𝗽𝘁𝘀:
+• Resolve Code Issues
+• Generate Python Script
+• Explain Algorithmic Concepts
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ac24ee39-3ebc-4f9d-812e-a02abeaa7d6d)
+
+## 
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152670930404573184" height="753" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
