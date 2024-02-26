@@ -200,3 +200,4 @@ Creates distinct identifiers for each piece of data, ensuring data integrity and
 [Rate-Limiting]
 Controls the flow of requests to maintain a steady and manageable pace, preventing strain on the system.
 
+![1706103060616](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/b0885934-5c90-42bd-8124-284f347456fb)
