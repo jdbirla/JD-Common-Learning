@@ -135,3 +135,29 @@ If you liked this, you'll love Hungry Minds, my free weekly newsletter curating 
 
 ![1706096041699](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/86629c73-2387-4d2c-95c7-b3de74c11843)
 
+## 6 Must Know Software Architectural Patterns
+1 - Event-Driven Architecture
+Decoupled Components and Asynchronous Communication.
+Application: Ideal for systems where events trigger actions, fostering scalability and responsiveness.
+
+2 - Layered Architecture
+Hierarchical Structure with Distinct Layers (Presentation, Business Logic, Data).
+Application: Common in enterprise applications, enhancing maintainability through compartmentalization and modular development.
+
+3 - Monolithic Architecture
+Unified Codebase and Deployment Unit.
+Application: Suited for smaller applications or simplicity-focused instances. Streamlines development and deployment with potential scaling challenges.
+
+4 - Microservices Architecture
+Distributed System with Independent, Interoperable Services.
+Application: Ideal for large and intricate systems, improving scalability, fault isolation, and enabling independent service development.
+
+5 - Model-View-Controller (MVC)
+Segregation of Concerns into Model, View, and Controller Components.
+Application: Common in web applications, enhancing code organization and maintenance by separating complex UI logic.
+
+6 - Master-Slave Architecture
+Centralized Control (Master) with Multiple Worker Nodes (Slaves).
+Application: Ubiquitous in distributed computing, optimizing parallel processing and load balancing.
+
+![1706103060616](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/be177349-23dc-4156-88f4-65c1bbd158ad)
