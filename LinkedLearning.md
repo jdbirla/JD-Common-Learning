@@ -454,7 +454,219 @@ Sorting algorithms are chosen based on the specific requirements of the applicat
 
 ![1705509378264](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/a280c10d-a4b6-48eb-a070-19616b9527a3)
 
-## 
+## Log Parsing Cheat Sheet
 
+The diagram below lists the 𝘁𝗼𝗽 𝟲 𝗹𝗼𝗴 𝗽𝗮𝗿𝘀𝗶𝗻𝗴 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀.
+
+1. GREP
+
+GREP searches any given input files, selecting lines that match one or more patterns.
+
+2. CUT
+
+CUT cuts out selected portions of each line from each file and writes them to the standard output.
+
+3. SED
+
+SED reads the specified files, modifying the input as specified by a list of commands.
+
+4. AWK
+
+AWK scans each input file for lines that match any of a set of patterns.
+
+5. SORT
+
+SORT sorts text and binary files by lines.
+
+6. UNIQ
+
+UNIQ reads the specified input file comparing adjacent lines and writes a copy of each unique input line to the output file.
+
+𝗟𝗲𝘁’𝘀 𝘄𝗮𝗹𝗸 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗮𝗻 𝗲𝘅𝗮𝗺𝗽𝗹𝗲.
+
+To count the number of hits from the top 10 IP addresses requesting the path "/api/payments" from the access log in this common log format:
+
+216.67.1.91 - leon [01/Jul/2002:12:11:52 +0000] "GET /index.html HTTP/1.1" 200 431
+
+We can use a combination of grep, cut, sort, and uniq commands. 𝗛𝗲𝗿𝗲 𝗶𝘀 𝗮 𝘀𝗮𝗺𝗽𝗹𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱:
+
+grep '/api/payments' access.log | cut -d ' ' -f 1 | sort | uniq -c | sort -rn | head -10
+
+Here's what each part of the command does:
+
+- grep '/api/payments' access.log: This filters the lines containing "/api/payments" from the access.log file.
+
+- cut -d ' ' -f 1: This extracts the first field (the IP address) from each line. The -d ' ' option specifies space as the field delimiter.
+
+- sort: This sorts the IP addresses.
+
+- uniq -c: This removes duplicate lines and prefixes lines by the number of occurrences.
+
+- sort -rn: This sorts the lines in reverse order (highest first) numerically.
+
+- head -10: This shows only the first 10 lines of the output, which correspond to the top 10 IP addresses.
+
+Over to you: Please share your top log parsing tips and tricks.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2a93fe91-df1d-4f08-8beb-39ad5c9f36f8)
+
+## 𝐇𝐨𝐰 𝐝𝐨 𝐩𝐫𝐨𝐭𝐨𝐜𝐨𝐥𝐬 𝐰𝐨𝐫𝐤 𝐢𝐧 𝐭𝐡𝐞 𝐓𝐂𝐏/𝐈𝐏 𝐨𝐫 𝐎𝐒𝐈 𝐌𝐨𝐝𝐞𝐥❓
+The TCP/IP and OSI models are frameworks that describe how data is transmitted over a network.
+
+𝐓𝐂𝐏/𝐈𝐏 𝐌𝐨𝐝𝐞𝐥:
+The TCP/IP model is simpler, with four layers:
+
+Link Layer (Network Interface Layer):
+
+Manages the physical transmission of data over a network. Converts binary data from the Transport Layer into network frames, preparing them for physical transmission over the network.
+
+Components: Network interface cards (NICs), Ethernet, and protocols like ARP (Address 
+Resolution Protocol).
+
+Internet Layer (Network Layer):
+
+Handles the logical transmission of data across the network. Determines the best path for data packets to travel across networks using IP addresses.
+
+Components: Routers and protocols like IP (Internet Protocol), ICMP (Internet Control Message Protocol).
+
+Transport Layer:
+
+Manages end-to-end communication between hosts. Ensures data is sent and received in order, without errors. TCP provides reliable communication, while UDP offers faster, but less reliable, transfer.
+
+Components: Protocols like TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+Application Layer:
+
+Provides protocols for specific user applications. This layer is where user applications interact with the network stack, using protocols suited to different types of data and services.
+
+Components: Protocols like HTTP (Hypertext Transfer Protocol), SMTP (Simple Mail Transfer Protocol).
+
+𝐎𝐒𝐈 𝐌𝐨𝐝𝐞𝐥:
+The OSI model is more detailed, with seven layers:
+
+Physical Layer:
+
+Transmits raw bit stream over the physical medium.Manages the physical connection between devices.
+
+Components: Cables, switches, and the physical aspects of the network.
+
+Data Link Layer:
+
+Ensures error-free transmission over the physical layer. Frames data packets, handles error detection and correction.
+
+Components: Bridges, switches, and protocols like Ethernet.
+
+Network Layer:
+
+Manages device addressing and path determination. Routes data across multiple networks.
+
+Components: Routers, and protocols like IP.
+
+Transport Layer:
+
+Similar to the TCP/IP model, it manages end-to-end communication and data integrity.
+
+Session Layer:
+
+Manages sessions between applications.Establishes, manages, and terminates sessions.
+
+Components: APIs and services that enable communication between machines.
+
+Presentation Layer:
+
+Translates data between the application layer and the network. Ensures that data is in the correct format for the application layer.
+
+Components: Encryption, compression, and translation services.
+
+Application Layer:
+
+Similar to the TCP/IP model, interfaces directly with user applications.
+
+The TCP/IP model is more practical and aligned with real-world networking.
+In practice, TCP/IP’s Application Layer encompasses OSI's Application, Presentation, and Session layers.
+
+![1704805635565](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/8b68fccf-46ed-4894-9273-5eff8c342ac2)
+
+
+## Java Exceptions
+You would agree that Exception handling is a critical aspect of a Java Application.
+
+Let's refresh some basic tips on handling exceptions -
+
+[*] Catch with Precision
+- Catch specific exceptions rather than generic ones like Exception.
+- This allows you to handle each exception type differently and provide tailored solutions.
+
+try {
+ // Code that may throw specific exceptions
+} catch (FileNotFoundException e) {
+ // Handle file not found exception
+} catch (IOException e) {
+ // Handle IO exception
+}
+
+
+[*] Graceful Error Handling
+- When an exception strikes, don't leave your users in the dark!
+- Provide meaningful error messages or logs to facilitate troubleshooting and enhance the user experience.
+
+try {
+ // Code that may throw an exception
+} catch (Exception e) {
+ logger.error("An error occurred: " + e.getMessage());
+ // Provide meaningful error message to aid in troubleshooting
+}
+
+
+[*] Resource Cleanup with Finesse
+- Use the 'finally' block only to release system resources like file handles, database connections, or network connections.
+
+try (FileInputStream fileInputStream = new FileInputStream("file.txt")) {
+ // Code
+} catch (IOException e) {
+ // Handle exception 
+} finally {
+ // Cleanup: The file input stream will be closed automatically
+}
+
+
+[*] Rethrow Strategically
+- Consider whether to re-throw an exception or wrap it in a new one. 
+- Rethrowing can be useful for propagating errors, but remember to provide valuable context for smooth debugging.
+
+try {
+ // Code that may throw an exception
+} catch (IOException e) {
+ logger.error("An error occurred: " + e.getMessage());
+ throw new CustomException("An error occurred while processing the data.", e);
+ // Rethrow the exception while providing additional context
+}
+
+
+[*] Mindful Checked Exceptions
+- Choose checked exceptions wisely. Excessive use can clutter code and make it harder to maintain.
+- Opt for unchecked exceptions or custom types when they fit the bill.
+
+public void readFile() throws IOException {
+ // Code that may throw IOException
+}
+
+
+[*] Embrace the Power of 'try-with-resources':
+- For automatic resource management, leverage the elegance of the try-with-resources statement.
+- It ensures proper resource closure and minimizes leaks.
+
+try (Connection connection = DriverManager.getConnection(url, username, password);
+ Statement statement = connection.createStatement()) {
+ // Code that uses the connection and statement
+} catch (SQLException e) {
+ // Handle any exceptions that occur
+}
+
+
+[*] Ignoring is Not an Option
+- Avoid turning a blind eye to exceptions!
+  
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/17d4f67f-9115-4b3a-8af0-193d321eaaf2)
 
 ## 
