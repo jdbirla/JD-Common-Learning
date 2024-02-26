@@ -406,4 +406,22 @@ The browser uses the obtained IP address to connect to the web server hosting th
 ![1705680493626](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3b64d226-cf65-481b-bcea-3cfb65a0bba3)
 
 
+## Insights into SSL Certificate Workflow:
+ClientHello:
+The client initiates the SSL/TLS handshake by sending a "ClientHello" message to the server, indicating its intent to establish a secure connection.
+
+ServerHello and Certificate Exchange:
+The server responds with a "ServerHello" message, selecting a cipher suite for secure communication. It then presents its SSL certificate to the client, initiating the certificate exchange.
+
+Trust Verification and Key Exchange:
+The client verifies the certificate's authenticity by checking its digital signature against trusted CAs. Simultaneously, both parties engage in a key exchange, using public-key cryptography to establish a shared secret key.
+
+Pre-master Secret and Session Keys:
+The client generates a pre-master secret, encrypts it with the server's public key, and sends it back. Both client and server independently derive session keys from the pre-master secret, ensuring secure communication.
+
+Finished:
+Both parties exchange "Finished" messages, confirming that the handshake is complete. From this point onward, the established session keys encrypt and decrypt data, securing the communication channel.
+
+![1705331828985](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/f56f48e4-6104-4899-80a7-d2e6c30ca12c)
+
 ## 
