@@ -930,4 +930,50 @@ Learn more about how SAML and AWS federation can simplify your access management
 
 ![1703302178016](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2c27d8c9-811b-4100-8b11-a2c68ce2e0b1)
 
+## Java Development - Cache Types
+Effective caching is fundamental to designing scalable and responsive data-intensive applications.
+
+How it helps?
+
+By caching intermediate results, frequently accessed data, or query results, these applications can minimize the need for repeated and resource-intensive computations.
+
+This enhances application responsiveness and minimizes the impact of I/O operations on performance.
+
+Caching can be implemented at various levels, such as application-level caching, database query result caching, or distributed caching, to ensure timely access to data and improve overall system performance.
+
+Let's talk about different type of Caches -
+
+[1.] L1 Cache
+On-CPU cache, includes L1 Instruction Cache (L1i) for machine code instructions and L1 Data Cache (L1d) for frequently used data.
+
+[2.] In-Memory Caching
+Uses Java Collections Framework (e.g., HashMap, ConcurrentHashMap) to cache data in memory.
+
+[3.] Distributed Caching
+Utilizes frameworks like Ehcache, Hazelcast, or Redis to distribute cached data across multiple nodes.
+
+[4.] Second-Level Caching
+In Hibernate, caches database query results to reduce redundant database calls.
+
+[5.] Spring Caching
+Leverages Spring's caching abstraction to integrate caching mechanisms (e.g., Ehcache, Redis) into applications.
+
+[6.] Web Caching
+Uses HTTP caching headers (e.g., Cache-Control, ETag) for client-side or intermediary proxy caching.
+
+[7.] Query Result Caching
+In Hibernate, caches results of database queries to optimize performance.
+
+[8.] Aspect-Oriented Caching
+Utilizes AspectJ or Spring AOP to separate caching logic from business logic.
+
+[9.] JCache (JSR-107)
+Implements javax.cache, a standard caching API for Java applications.
+
+[10.] Guava Cache
+Incorporates Google Guava Cache, an in-memory caching library with features like expiration and eviction.
+
+[11.] OS-Level Caching
+Leverages the file system cache for reading frequently accessed files to improve performance.
+
 ## 
