@@ -805,4 +805,129 @@ Over to you: QR code logins are gaining popularity. Do you know how it works?
 
 ![1703833728966](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/1766c0c9-f242-4668-8754-227cba85cc0a)
 
+## 𝗦𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝘃𝘀. 𝗔𝘀𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 𝗘𝘅𝗽𝗹𝗮𝗶𝗻𝗲𝗱 🔒
+Whether you're a cybersecurity enthusiast, a developer, or someone curious about securing digital communication, understanding these encryption methods is necessary.
+
+Let's delve into the key distinctions:
+
+𝗦𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻:
+- Description: Symmetric encryption employs a single, shared key for both encryption and decryption.
+- Use Case: Ideal for scenarios where a secure channel already exists for key exchange.
+
+𝗔𝘀𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻:
+- Description: Asymmetric encryption uses a pair of keys, public and private, for encryption and decryption.
+- Use Case: Suitable for secure communication over untrusted networks, eliminating the need for a shared secret.
+
+𝗞𝗲𝘆 𝗗𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝗰𝗲𝘀: 𝗦𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝘃𝘀. 𝗔𝘀𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰
+
+𝟭. 𝗞𝗲𝘆 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁:
+- Symmetric: Requires secure key distribution mechanisms.
+- Asymmetric: Public keys can be openly shared, while private keys are closely guarded.
+
+𝟮. 𝗖𝗼𝗺𝗽𝘂𝘁𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗖𝗼𝗺𝗽𝗹𝗲𝘅𝗶𝘁𝘆:
+- Symmetric: Generally faster and less computationally intensive.
+- Asymmetric: Slower due to complex mathematical operations.
+
+𝟯. 𝗦𝗰𝗮𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆:
+- Symmetric: Efficient for large-scale data encryption.
+- Asymmetric: More resource-intensive, especially for bulk data.
+
+𝟰. 𝗨𝘀𝗲 𝗖𝗮𝘀𝗲𝘀:
+- Symmetric: Secure, established channels, and resource-constrained environments.
+- Asymmetric: Secure communication over untrusted networks, digital signatures, and key exchange.
+
+𝗥𝗲𝗮𝗹-𝗪𝗼𝗿𝗹𝗱 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀:
+
+𝟭. 𝗦𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 𝗶𝗻 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲:
+- Utilized in HTTPS/TLS for securing web traffic.
+- Commonly applied in VPNs for secure communication between network devices.
+
+𝟮. 𝗔𝘀𝘆𝗺𝗺𝗲𝘁𝗿𝗶𝗰 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 𝗶𝗻 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲:
+- Facilitates secure email communication through digital signatures.
+- Forms the basis for secure communication in blockchain technology.
+
+𝗖𝗵𝗼𝗼𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗥𝗶𝗴𝗵𝘁 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝘆:
+
+- Data Sensitivity: Assess the level of sensitivity of your data and communication.
+- Resource Constraints: Consider the computational resources available for encryption and decryption.
+- Key Distribution: Evaluate the feasibility of securely distributing and managing encryption keys.
+
+
+![1703426416669](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/0c21005f-ee3e-4f07-abcd-2c52fe63e926)
+
+
+## Key Concepts to Understand Database Sharding
+Database sharding refers to splitting data across multiple database servers and is commonly used for scaling. However, sharding introduces major operational and infrastructure complexity that should be 𝗮𝘃𝗼𝗶𝗱𝗲𝗱 𝘂𝗻𝗹𝗲𝘀𝘀 𝗮𝗯𝘀𝗼𝗹𝘂𝘁𝗲𝗹𝘆 𝗻𝗲𝗰𝗲𝘀𝘀𝗮𝗿𝘆.
+
+𝗔𝗽𝗽𝗿𝗼𝗮𝗰𝗵𝗲𝘀 𝘁𝗼 𝗽𝗼𝘀𝘁𝗽𝗼𝗻𝗲 𝘀𝗵𝗮𝗿𝗱𝗶𝗻𝗴
+
+Vertical Scaling: Use more powerful single database servers - more CPUs, memory, storage and I/O bandwidth. Much simpler to manage than sharding while allowing sizable expansion.
+
+SQL Optimization: Tune SQL queries and database schema to maximize performance on a single server. Requires proper indexes, efficient SQL, etc.
+
+Caching: Use in-memory caches like Redis to reduce database load by avoiding hitting it for every common query.
+
+Read Replicas + Load Balancer: Adds horizontal read scaleability without full complexity of sharding. Directs reads across replicas.
+
+These optimization approaches should be 𝗲𝘅𝗵𝗮𝘂𝘀𝘁𝗲𝗱 𝗯𝗲𝗳𝗼𝗿𝗲 𝘀𝗵𝗮𝗿𝗱𝗶𝗻𝗴 𝗴𝗶𝘃𝗲𝗻 𝘁𝗵𝗲 𝗰𝗼𝗺𝗽𝗹𝗲𝘅𝗶𝘁𝘆.
+
+𝗛𝗼𝗿𝗶𝘇𝗼𝗻𝘁𝗮𝗹 𝘃𝘀 𝗩𝗲𝗿𝘁𝗶𝗰𝗮𝗹 𝗦𝗵𝗮𝗿𝗱𝗶𝗻𝗴
+
+There are two high-level approaches:
+
+Vertical Sharding: Split database into columnar tables or sections vs rows. For example, having one table for names and another table for emails.
+
+Horizontal Sharding: Split database into row partitions distributed evenly across multiple servers.
+
+Some horizontal sharding methods:
+
+1. 𝗥𝗮𝗻𝗴𝗲 𝗕𝗮𝘀𝗲𝗱: Segment rows based on range values like age groups. Can cause uneven data distribution and hot spots.
+
+2. 𝗗𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆 𝗕𝗮𝘀𝗲𝗱: Use a lookup directory to locate rows. Allows flexibility but single point of failure risk.
+
+3. 𝗛𝗮𝘀𝗵 𝗕𝗮𝘀𝗲𝗱: Apply hash functions to spread rows uniformly across shards. Harder to rebalance.
+
+When sharding, use the simplest approach that meets requirements to minimize complexity. Seek to avoid until necessary.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/08d0d9f4-ca4f-4d82-8946-c85ce05ebafc)
+
+## Logging, tracing and metrics are 3 pillars of system observability. 
+The diagram below shows their definitions and typical architectures.
+
+🔹 Logging
+Logging records discrete events in the system. For example, we can record an incoming request or a visit to databases as events. It has the highest volume. ELK (Elastic-Logstash-Kibana) stack is often used to build a log analysis platform. We often define a standardized logging format for different teams to implement, so that we can leverage keywords when searching among massive amounts of logs.
+
+🔹 Tracing
+Tracing is usually request-scoped. For example, a user request goes through the API gateway, load balancer, service A, service B, and database, which can be visualized in the tracing systems. This is useful when we are trying to identify the bottlenecks in the system. We use OpenTelemetry to showcase the typical architecture, which unifies the 3 pillars in a single framework.
+
+🔹 Metrics
+Metrics are usually aggregatable information from the system. For example, service QPS, API responsiveness, service latency, etc. The raw data is recorded in time-series databases like InfluxDB. Prometheus pulls the data and transforms the data based on pre-defined alerting rules. Then the data is sent to Grafana for display or to the alert manager which then sends out email, SMS, or Slack notifications or alerts.
+
+![1703782033069](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/b5f3d648-cbe6-491d-88c2-8d9df3c4acc7)
+
+
+## How SSO/SAML works!
+
+AssumeRole: Easily switch roles within your AWS account or between accounts for straightforward permission management.
+
+AssumeRoleWithSAML: Use SAML (a secure standard) to get credentials for users, making sure only the right people have access.
+
+AssumeRoleWithWebIdentity: For users signing in via Amazon Cognito, Google, or Facebook, AWS suggests using Cognito for a hassle-free login.
+
+GetSessionToken: Boost security by adding Multi-Factor Authentication (MFA) for users or the main AWS account holder.
+
+GetFederationToken: Great for apps acting on behalf of users, this gives temporary access to those who need it, keeping things flexible yet secure.
+
+Identity Federation in AWS: This lets you extend AWS access to users outside of AWS, without having to individually manage each user. It's great for organizations that already have their own identity systems (like Active Directory) or for apps that need to use AWS resources.
+
+Key features include:
+
+SAML 2.0 Integration: Works smoothly with well-known identity providers, granting temporary access to AWS services.
+
+Custom Identity Broker: A solution for when your identity provider isn't SAML-compatible, managing authentication and AWS access.
+
+Learn more about how SAML and AWS federation can simplify your access management, keeping your AWS resources secure and easily manageable. Dive into the world of AWS Identity Federation and unlock the full potential of your AWS resources!
+
+![1703302178016](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2c27d8c9-811b-4100-8b11-a2c68ce2e0b1)
+
 ## 
