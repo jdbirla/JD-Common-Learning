@@ -315,6 +315,95 @@ Unlock the full potential of ChatGPT:
 
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ac24ee39-3ebc-4f9d-812e-a02abeaa7d6d)
 
-## 
+## Hands-On Guide: Implementing CI/CD for your web application with AWS Codepipeline
+https://www.linkedin.com/posts/mtayyabsattar_implementing-cicd-for-your-web-application-activity-7152670931243446274-fIw0?utm_source=share&utm_medium=member_desktop
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7152670930404573184" height="753" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+## IBM and Meta offering Web Development Courses for everyone.🚀🚀
+
+Repost so that all can take benifits
+
+𝐈𝐁𝐌 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐂𝐨𝐮𝐫𝐬𝐞𝐬
+
+👉 https://lnkd.in/dKYZ_F9i
+
+1. IBM Full Stack Software Developer Professional Certificate
+👉 https://lnkd.in/dADYt4Wz
+
+2. Introduction to Web Development with HTML, CSS, JavaScript
+👉 https://lnkd.in/dgs9bQ-6
+
+3. IBM Front-End Developer Professional Certificate
+👉 https://lnkd.in/dmP3PDaU
+
+4. IBM Back-End Development Professional Certificate
+👉 https://lnkd.in/dfkdxEEr
+
+5. IBM Python for Data Science, AI & Development
+👉 https://lnkd.in/dwVbZt7b
+
+6. IBM Developing Cloud Apps with Node.js and React
+👉 https://lnkd.in/dSqJck7A
+
+𝐌𝐞𝐭𝐚 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐂𝐨𝐮𝐫𝐬𝐞𝐬
+
+1. Meta Front-End Developer Professional Certificate
+👉https://lnkd.in/dE7FKwMp
+
+2. Meta React Native Specialization
+👉 https://lnkd.in/dXCs5ewA
+
+3. Introduction to Front-End Development
+👉 https://lnkd.in/dxmyJ2iw
+
+4. Meta HTML and CSS in depth
+👉 https://lnkd.in/dwyWkpqK
+
+5. Advanced React
+👉 https://lnkd.in/dBaF8Krj
+
+6. HTML, CSS, and Javascript for Web Developers
+👉 https://lnkd.in/d3Zm2h3P
+
+7. Web Design for Everybody: Basics of Web Development & Coding Specialization
+👉 https://lnkd.in/dudsqPYK
+
+8. Introduction to Web Development
+👉 https://lnkd.in/drdy75ig
+
+9. Responsive Website Development and Design Specialization
+👉 https://lnkd.in/dn425Hps
+
+10. Full Stack Web Development en Español Specialization
+👉 https://lnkd.in/dPQ92M4u
+
+11. Web Applications for Everybody Specialization
+👉 https://lnkd.in/dt_HS7Pm
+
+## How DNS Works - A Simplified Overview
+[1] User Types a URL:
+A user enters a website's URL (Uniform Resource Locator) into their browser.
+[2] Browser Contacts DNS Resolver:
+The browser checks its local DNS resolver (usually provided by the internet service provider) to find the IP address associated with the entered domain.
+[3] DNS Resolver Searches Cache:
+The DNS resolver checks its cache for a previously resolved IP address for the requested domain. If found, the process skips to the next step.
+[4] Recursive DNS Query:
+If the resolver doesn't have the IP address, it starts a recursive query. It contacts the root DNS server, asking for information about the top-level domain (TLD) of the requested site.
+[5] Root DNS Server Response:
+The root DNS server responds with the TLD DNS server's address.
+[6] TLD DNS Server Inquiry:
+The resolver contacts the TLD DNS server, asking for information about the authoritative DNS server for the specific domain.
+[7] Authoritative DNS Server Contact:
+The TLD DNS server responds with the IP address of the authoritative DNS server for the domain.
+[8] Domain's Authoritative DNS Server Response:
+The resolver contacts the authoritative DNS server, requesting the IP address associated with the domain.
+[9] Authoritative DNS Server Provides IP:
+The authoritative DNS server responds with the IP address of the requested domain.
+[10] DNS Resolver Caches IP:
+The DNS resolver caches the obtained IP address for future use and sends it to the user's browser.
+[11] Browser Connects to IP Address:
+The browser uses the obtained IP address to connect to the web server hosting the requested website.
+
+![1705680493626](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3b64d226-cf65-481b-bcea-3cfb65a0bba3)
+
+
+## 
