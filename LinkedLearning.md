@@ -2226,4 +2226,192 @@ Languages that are interpreted don't undergo compilation. Instead, their code is
 Generally, compiled languages have a speed advantage over interpreted ones.
 ![1698075576783](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/48f41339-57a0-45f3-815e-44910396fc88)
 
+## How do we transform a system to be Cloud Native?
+The diagram below shows the action spectrum and adoption roadmap. You can use it as a blueprint for adopting cloud-native in your organization.
+
+For a company to adopt cloud native architecture, there are 6 aspects in the spectrum:
+
+1. Application definition development
+2. Orchestration and management
+3. Runtime
+4. Provisioning
+5. Observability
+6. Serverless
+
+Over to you: Where does your system stand in the adoption roadmap?
+
+Reference: Cloud & DevOps: Continuous Transformation by MIT
+Redrawn by ByteByteGo
+![1695656751388](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/5752afbe-2ac6-4843-8552-a58ceb540be5)
+
+
+## Best ways to test system functionality. Next week's topic will be listed at the end.
+Best ways to test system functionality. Next week's topic will be listed at the end.
+
+Testing system functionality is a crucial step in software development and engineering processes.
+
+It ensures that a system or software application performs as expected, meets user requirements, and operates reliably.
+
+Here we delve into the best ways:
+
+1. Unit Testing: Ensures individual code components work correctly in isolation.
+
+2. Integration Testing: Verifies that different system parts function seamlessly together.
+
+3. System Testing: Assesses the entire system's compliance with user requirements and performance.
+
+4. Load Testing: Tests a system's ability to handle high workloads and identifies performance issues.
+
+5. Error Testing: Evaluates how the software handles invalid inputs and error conditions.
+
+6. Test Automation: Automates test case execution for efficiency, repeatability, and error reduction.
+
+Over to you: How do you approach testing system functionality in your software development or engineering projects?
+
+Over to you: what's your company's release process look like?
+
+Next week, we will talk about:
+- Python vs. C++ vs. Java (YouTube)
+- Cloud provider cheatsheet (AWS, GCP, Azure, Oracle, Alibaba Cloud)
+- Object stores
+- Tech interview materials
+- Mobile release
+
+![1697988792124](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/15bc6771-8542-4d4f-baad-252c15726b9a)
+
+## Cloud Certifications - Role Based Roadmap 👇
+Navigating the certification paths for 8 popular roles.
+
+AWS:
+1. Solutions Architect:
+Cloud Practitioner Foundational
+Solutions Architect Associate
+Solutions Architect Professional
+
+2. Cloud Data Engineer:
+Cloud Practitioner Foundational
+Solutions Architect Associate
+Data Analytics Specialty
+
+3. Software Development Engineer:
+Cloud Practitioner Foundational
+Developer Associate
+
+4. System Administrator:
+Cloud Practitioner Foundational
+SyOps Administrator Associate
+
+5. Cloud DevOps Engineer:
+Cloud Practitioner Foundational
+Developer Associate
+DevOps Engineer Professional
+
+6. Cloud Security Engineer:
+Cloud Practitioner Foundational
+SyOps Administrator Associate
+Security Specialty
+
+7. Network Engineer:
+Cloud Practitioner Foundational
+Solutions Architect Associate
+Advanced Networking Specialty
+
+8. Machine Learning Engineer:
+Cloud Practitioner Foundational
+Solutions Architect Associate
+Machine Learning Specialty
+
+
+Azure:
+1. Solutions Architect:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Solutions Architect Expert
+
+2. Cloud Data Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Data Engineer Associate
+
+3. Software Development Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Developer Associate
+
+4. System Administrator:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Administrator Associate
+
+5. Cloud DevOps Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Developer Associate
+Microsoft Certified: DevOps Engineer Expert
+
+6. Cloud Security Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Administrator Associate
+Microsoft Certified: Azure Security Engineer Associate
+
+7. Network Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure Network Engineer Associate
+
+8. Machine Learning Engineer:
+Microsoft Certified: Azure Fundamentals
+Microsoft Certified: Azure AI Engineer Associate
+
+
+Google Cloud:
+1. Solutions Architect:
+Associate Cloud Engineer
+Professional Cloud Architect
+
+2. Cloud Data Engineer:
+Associate Cloud Engineer
+Professional Data Engineer
+
+3. Software Development Engineer:
+Associate Cloud Engineer
+Professional Cloud Developer
+
+4. System Administrator:
+Associate Cloud Engineer
+
+5. Cloud DevOps Engineer:
+Associate Cloud Engineer
+Professional DevOps Engineer
+
+6. Cloud Security Engineer:
+Associate Cloud Engineer
+Professional Security Engineer
+
+7. Network Engineer:
+Associate Cloud Engineer
+Professional Network Engineer
+
+8. Machine Learning Engineer:
+Associate Cloud Engineer
+Professional Machine Learning Engineer
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/c759d1ca-855e-4d78-942c-21a7b4984820)
+
+## Explaining 5 unique ID generators in distributed systems.
+The diagram below shows how they work. Each generator has its pros and cons.
+
+1. UUID
+A UUID has 128 bits. It is simple to generate and no need to call another service. However, it is not sequential and inefficient for database indexing. Additionally, UUID doesn’t guarantee global uniqueness. We need to be careful with ID conflicts (although the chances are slim.)
+
+2. Snowflake
+Snowflake’s ID generation process has multiple components: timestamp, machine ID, and serial number. The first bit is unused to ensure positive IDs. This generator doesn’t need to talk to an ID generator via the network, so is fast and scalable.
+
+Snowflake implementations vary. For example, data center ID can be added to the “MachineID” component to guarantee global uniqueness.
+
+3. DB auto-increment
+Most database products offer auto-increment identity columns. Since this is supported in the database, we can leverage its transaction management to handle concurrent visits to the ID generator. This guarantees uniqueness in one table. However, this involves network communications and may expose sensitive business data to the outside. For example, if we use this as a user ID, our business competitors will have a rough idea of the total number of users registered on our website.
+
+4. DB segment
+An alternative approach is to retrieve IDs from the database in batches and cache them in the ID servers, each ID server handling a segment of IDs. This greatly saves the I/O pressure on the database.
+
+5. Redis
+We can also use Redis key-value pair to generate unique IDs. Redis stores data in memory, so this approach offers better performance than the database.
+![1697823917063](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3da6f09e-14bb-4a8a-929c-b9901a259c8e)
+
+
 ## 
