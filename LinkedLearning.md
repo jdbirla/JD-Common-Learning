@@ -2278,6 +2278,7 @@ Next week, we will talk about:
 - Mobile release
 
 ![1697988792124](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/15bc6771-8542-4d4f-baad-252c15726b9a)
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/75a9e697-f581-4765-964a-469f7db1fd29)
 
 ## Cloud Certifications - Role Based Roadmap 👇
 Navigating the certification paths for 8 popular roles.
@@ -2413,5 +2414,168 @@ An alternative approach is to retrieve IDs from the database in batches and cach
 We can also use Redis key-value pair to generate unique IDs. Redis stores data in memory, so this approach offers better performance than the database.
 ![1697823917063](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3da6f09e-14bb-4a8a-929c-b9901a259c8e)
 
+
+## Explaining JSON Web Token (JWT) to a 10 year old Kid.
+Explaining JSON Web Token (JWT) to a 10 year old Kid.
+.
+.
+Imagine you have a special box called a JWT. Inside this box, there are three parts: a header, a payload, and a signature.
+
+The header is like the label on the outside of the box. It tells us what type of box it is and how it's secured. It's usually written in a format called JSON, which is just a way to organize information using curly braces { } and colons : .
+
+The payload is like the actual message or information you want to send. It could be your name, age, or any other data you want to share. It's also written in JSON format, so it's easy to understand and work with.
+
+Now, the signature is what makes the JWT secure. It's like a special seal that only the sender knows how to create. The signature is created using a secret code, kind of like a password. This signature ensures that nobody can tamper with the contents of the JWT without the sender knowing about it.
+
+When you want to send the JWT to a server, you put the header, payload, and signature inside the box. Then you send it over to the server. The server can easily read the header and payload to understand who you are and what you want to do.
+
+Over to you: When should we use JWT for authentication? What are some other authentication methods?
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/c8564cba-4f34-46cf-b072-44430a1d3059)
+
+## IBM MQ -> RabbitMQ -> Kafka ->Pulsar
+IBM MQ -> RabbitMQ -> Kafka ->Pulsar, How do message queue architectures evolve?
+
+🔹 IBM MQ
+IBM MQ was launched in 1993. It was originally called MQSeries and was renamed WebSphere MQ in 2002. It was renamed to IBM MQ in 2014. IBM MQ is a very successful product widely used in the financial sector. Its revenue still reached 1 billion dollars in 2020.
+
+🔹 RabbitMQ
+RabbitMQ architecture differs from IBM MQ and is more similar to Kafka concepts. The producer publishes a message to an exchange with a specified exchange type. It can be direct, topic, or fanout. The exchange then routes the message into the queues based on different message attributes and the exchange type. The consumers pick up the message accordingly.
+
+🔹 Kafka
+In early 2011, LinkedIn open sourced Kafka, which is a distributed event streaming platform. It was named after Franz Kafka. As the name suggested, Kafka is optimized for writing. It offers a high-throughput, low-latency platform for handling real-time data feeds. It provides a unified event log to enable event streaming and is widely used in internet companies.
+
+Kafka defines producer, broker, topic, partition, and consumer. Its simplicity and fault tolerance allow it to replace previous products like AMQP-based message queues.
+
+🔹 Pulsar
+Pulsar, developed originally by Yahoo, is an all-in-one messaging and streaming platform. Compared with Kafka, Pulsar incorporates many useful features from other products and supports a wide range of capabilities. Also, Pulsar architecture is more cloud-native, providing better support for cluster scaling and partition migration, etc.
+
+There are two layers in Pulsar architecture: the serving layer and the persistent layer. Pulsar natively supports tiered storage, where we can leverage cheaper object storage like AWS S3 to persist messages for a longer term.
+
+Over to you: which message queues have you used?
+
+![1697177276062](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/041a3d1c-27bc-4db3-87ed-df08489db5a2)
+
+## Top 6 Load Balancing Algorithms
+Top 6 Load Balancing Algorithms
+
+🔹 Static Algorithms
+1. Round robin
+The client requests are sent to different service instances in sequential order. The services are usually required to be stateless.
+
+2. Sticky round-robin
+This is an improvement of the round-robin algorithm. If Alice’s first request goes to service A, the following requests go to service A as well.
+
+3. Weighted round-robin
+The admin can specify the weight for each service. The ones with a higher weight handle more requests than others.
+
+4. Hash
+This algorithm applies a hash function on the incoming requests’ IP or URL. The requests are routed to relevant instances based on the hash function result.
+
+🔹 Dynamic Algorithms
+5. Least connections
+A new request is sent to the service instance with the least concurrent connections.
+
+6. Least response time
+A new request is sent to the service instance with the fastest response time.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/39021daa-2c10-444b-bf0f-ece6e5f69849)
+
+## 𝗖𝗹𝗲𝗮𝗿𝗶𝗻𝗴 𝘁𝗵𝗲 𝗙𝗼𝗴: 𝗗𝗮𝘁𝗮𝗢𝗽𝘀 𝗶𝘀 𝗡𝗢𝗧 𝗠𝗲𝗿𝗲𝗹𝘆 𝗗𝗲𝘃𝗢𝗽𝘀 𝗳𝗼𝗿 𝗗𝗮𝘁𝗮!
+
+There’s a bit of a myth we need to bust today: DataOps is NOT DevOps for data. 🚫
+
+❌ So let’s unwrap this mystery together, but in super straightforward words! 🎁
+
+𝗗𝗲𝘃𝗢𝗽𝘀 𝗶𝗻 𝗮 𝗡𝘂𝘁𝘀𝗵𝗲𝗹𝗹 🥜👥
+
+- 𝗗𝗲𝘃𝗢𝗽𝘀: Picture this as a perfect tag team! One teammate, the developer, builds software, while the other, the operations team, ensures it runs seamlessly. Together, they aim to deliver quick and flawless software to users. It’s all about a speedy and efficient creation
+and delivery process. 🚀💻
+
+𝙳𝚎𝚟𝙾𝚙𝚜 = [𝙿𝚕𝚊𝚗 + 𝙲𝚘𝚍𝚎 + 𝙲𝙸(𝙱𝚞𝚒𝚕𝚍 + 𝚃𝚎𝚜𝚝) + 𝙲𝙳(𝙳𝚎𝚙𝚕𝚘𝚢) + 𝙾𝚙𝚎𝚛𝚊𝚝𝚎(𝚁𝚞𝚗 + 𝙼𝚘𝚗𝚒𝚝𝚘𝚛) + 𝙵𝚎𝚎𝚍𝚋𝚊𝚌𝚔(𝙻𝚎𝚊𝚛𝚗 + 𝙿𝚕𝚊𝚗)]
+
+𝗗𝗶𝗴𝗴𝗶𝗻𝗴 𝗶𝗻𝘁𝗼 𝗗𝗮𝘁𝗮𝗢𝗽𝘀 🕵️‍♂️📊
+
+- 𝗗𝗮𝘁𝗮𝗢𝗽𝘀: While it’s got some vibe from DevOps, it’s got its unique flavor! It’s less about building software and more about ensuring data flows like a peaceful river through your organization, always clear, trustworthy, and ready to make informed business decisions! It involves ensuring everyone from data scientists to business analysts is on the same page. 🏞️📘
+𝙳𝚊𝚝𝚊𝙾𝚙𝚜 = [𝙴𝚡𝚙𝚕𝚘𝚛𝚎(𝚂𝚊𝚗𝚍𝚋𝚘𝚡 𝙼𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝) + 𝙳𝚎𝚟𝚎𝚕𝚘𝚙 + 𝙲𝙸(𝙾𝚛𝚌𝚑𝚎𝚜𝚝𝚛𝚊𝚝𝚎 + 𝚃𝚎𝚜𝚝) + 𝙲𝙳(𝙳𝚎𝚙𝚕𝚘𝚢) + 𝙾𝚙𝚎𝚛𝚊𝚝𝚎(𝙾𝚛𝚌𝚑𝚎𝚜𝚝𝚛𝚊𝚝𝚎 + 𝙼𝚘𝚗𝚒𝚝𝚘𝚛) + 𝙵𝚎𝚎𝚍𝚋𝚊𝚌𝚔(𝙰𝚗𝚊𝚕𝚢𝚣𝚎 + 𝙴𝚡𝚙𝚕𝚘𝚛𝚎)]
+
+
+𝗦𝗽𝗼𝘁𝘁𝗶𝗻𝗴 𝘁𝗵𝗲 𝗗𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝗰𝗲𝘀 🔄🔍
+
+- DevOps connects developers and operations, while DataOps unites a larger group: developers, data scientists, data engineers, and business minds. 🌎🤗
+
+- DataOps uniquely addresses the journey of data - from raw numbers to insightful analytics
+
+- ensuring it’s clean, usable, and delivered without a hiccup! 📈✨
+
+𝗪𝗵𝘆 𝗗𝗼𝗲𝘀 𝗜𝘁 𝗠𝗮𝘁𝘁𝗲𝗿? 🤷‍♀️🎯
+
+Recognizing these subtle differences helps us implement the right strategies and tools in our projects.
+
+Whether we’re crafting software with #DevOps or navigating the exciting world of data with #DataOps, identifying their unique abilities is key! 🔐🛠️
+
+So, data pals, what are your thoughts? 🗣️💭
+
+Dive into the comments and let's create a whirlpool of knowledge together! 🌀👥
+
+If this friendly chat was a lightbulb moment, share it to spread the insight! 💡🔄
+
+🌺 Your insights light up the community! Looking forward to reading your delightful thoughts below! 🌺
+
+![1697159073135](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2fd0bf01-65b5-4a93-bd1d-5905d6f98ae1)
+
+## 12 Factor App
+The 12 Factor App is a methodology for building scalable and maintainable web applications. It provides a set of guidelines for developing modern, cloud-native, and containerized applications. Here are the 12 factors explained in bullet points:
+
+1. Codebase:
+  - One codebase per application.
+  - Use version control to manage code changes.
+
+2. Dependencies:
+  - Explicitly declare and isolate dependencies.
+  - Avoid relying on system-wide packages.
+
+3. Config:
+  - Store configuration in environment variables.
+  - Keep configuration separate from code.
+
+4. Backing Services:
+  - Treat external services (databases, caches, etc.) as attached resources.
+  - Connect to them via URLs or environment variables.
+
+5. Build, Release, Run:
+  - Strictly separate the build, release, and run stages of the application.
+  - Use consistent and repeatable build processes.
+
+6. Processes:
+  - Execute the application as stateless processes.
+  - Avoid storing session data locally; use external services.
+
+7. Port Binding:
+  - Export services via a port and communicate over the network.
+  - Web applications should bind to a port defined by the environment.
+
+8. Concurrency:
+  - Scale out via the process model.
+  - Utilize multiple stateless processes to handle requests.
+
+9. Disposability:
+  - Maximize robustness with fast startup and graceful shutdown.
+  - Terminate unneeded processes without impact.
+
+10. Dev/Prod Parity:
+  - Keep development, staging, and production environments as similar as possible.
+  - Use the same dependencies and configuration.
+
+11. Logs:
+  - Treat logs as event streams.
+  - Write application logs to standard output and allow log aggregation.
+
+12. Admin Processes:
+  - Run administrative tasks as one-off processes.
+  - Use the same codebase and environment for administrative tasks.
+
+Adhering to these 12 factors helps create applications that are easier to develop, deploy, and maintain, making them well-suited for cloud-native and containerized environments.
+
+![1697068638860](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ce886ab6-c65d-4c83-a005-135a6618ed6d)
 
 ## 
