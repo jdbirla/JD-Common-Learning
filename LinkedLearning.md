@@ -1647,5 +1647,6 @@ The AWS SRA serves as a valuable resource for organizations seeking to establish
 
 ▷ UDP (User Datagram Protocol) is a connectionless and faster protocol for transmitting data over networks, but it doesn't guarantee delivery.
 
+![1699312494770](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/c1c1de75-91ce-4bde-ba25-7025dfa91086)
 
 ## 
