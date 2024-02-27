@@ -2654,6 +2654,9 @@ Step 3: Now that we have the IP address of the server, the browser sends an HTTP
 
 Step 4: The server processes the request and sends back the response. For a successful response, the status code is 200. There are 3 parts in the response: HTML, CSS and Javascript. The browser parses HTML and generates DOM tree. It also parses CSS and generates CSSOM tree. It then combines DOM tree and CSSOM tree to render tree. The browser renders the content and display to the user.
 ![1696866325286](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e6f85100-9486-4583-9c60-0534945d2046)
+![1693886845449](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/06f0d2ed-6eab-43e3-b63c-5ebb95a690b3)
+
+
 
 ## sheet of various databases in cloud services
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2333e327-5738-46a7-9ae5-49f819b7f24e)
@@ -2730,5 +2733,217 @@ These positive thoughts can help improve your mindset and overall well-being
 
 5. Expiration: JWTs can have an expiration time (specified in the "exp" claim), which means they are only valid for a certain period
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/20024722-91aa-4810-bf85-3e461a52727b)
+
+## Top 5 Kafka use cases.
+Kafka was originally built for massive log processing. It retains messages until expiration and lets consumers pull messages at their own pace.
+
+Unlike its predecessors, Kafka is more than a message queue, it is an open-source event streaming platform for various cases.
+
+Let’s review the popular Kafka use cases.
+
+1. Log processing and analysis
+The diagram below shows a typical ELK (Elastic-Logstash-Kibana) stack. Kafka efficiently collects log streams from each instance. ElasticSearch consumes the logs from Kafka and indexes them. Kibana provides a search and visualization UI on top of ElasticSearch.
+
+2. Data streaming in recommendations
+E-commerce sites like Amazon use past behaviors and similar users to calculate product recommendations. The diagram below shows how the recommendation system works. Kafka streams the raw clickstream data, Flink processes it, and model training consumes the aggregated data from the data lake. This allows continuous improvement of the relevance of recommendations for each user.
+
+3. System monitoring and alerting
+Similar to the log analysis system, we need to collect system metrics for monitoring and troubleshooting. The difference is that metrics are structured data while logs are unstructured text. Metrics data is sent to Kafka and aggregated in Flink. The aggregated data is consumed by a real-time monitoring dashboard and alerting system (for example, PagerDuty).
+
+4. CDC (Change data capture)
+Change Data Capture (CDC) streams database changes to other systems for replication or cache/index updates. For example, in the diagram below, the transaction log is sent to Kafka and ingested by ElasticSearch, Redis, and secondary databases.
+
+5. System migration
+Upgrading legacy services is challenging - old languages, complex logic, and lack of tests. We can mitigate the risk by leveraging a messaging middleware. In the diagram below, to upgrade the order service in the diagram below, we update the legacy order service to consume input from Kafka and write the result to ORDER topic. The new order service consumes the same input and writes the result to ORDERNEW topic. A reconciliation service compares ORDER and ORDERNEW. If they are identical, the new service passes testing.
+
+Over to you: Do you have any other Kafka use cases to share?
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/3b508bb3-5481-4437-ad89-1a8485239b09)
+
+
+## 🔐 Understanding OAuth 2.0 Flows: Keeping Your Data Secure! 🔒
+🔐 Understanding OAuth 2.0 Flows: Keeping Your Data Secure! 🔒
+
+OAuth 2.0 is like a digital bouncer that lets you grant limited access to your data without revealing your sensitive info. 🎩✨ Let's dive into the different flows:
+
+1. Authorization Code Flow 🔄:
+  This is the VIP entrance! Apps ask for permission and get an authorization code. They exchange this code for an access token, like a backstage pass, to access specific resources. 🎫🎉
+
+2. Implicit Flow 🔍:
+  Skip the line! Used for public clients like web apps. They get access tokens directly after user consent. 🕶️🔑
+
+3. Client Credentials Flow 🤖:
+  App-to-app communication! No users involved. Apps directly exchange credentials for tokens. Like robots talking to each other! 🤖🤝
+
+4. Resource Owner Password Credentials (ROPC) Flow 🤐:
+  Username and password, please! Least secure option, used when trust is established between the app and user's credentials. 🙊🔐
+
+5. Device Authorization Flow 📱💻:
+  Smart devices enter the party! Enter a code on a separate device to grant access. Perfect for gadgets with no keyboards! ⌨️📲
+
+Remember, OAuth 2.0 keeps your data safe by limiting what apps can do and access. Always review permissions before granting access. Stay secure, stay smart!
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/8e5a2bb0-e76e-495e-b742-d3284a3b15fc)
+
+## Top 5 Software Architectural Patterns You Must Know
+
+Top 5 Software Architectural Patterns You Must Know
+
+Let's dive into the fascinating world of Software Architectural Patterns. 🌐 Whether you're a seasoned developer or just starting out, understanding these patterns can significantly enhance your ability to design robust and scalable software systems. 🚀
+
+🧩 What are Software Architectural Patterns?
+Architectural patterns are like blueprints for structuring and organizing software applications. They provide tried-and-true solutions to common design problems, helping developers create systems that are maintainable, extensible, and adaptable.
+
+🏛️ Some Key Architectural Patterns:
+
+1. MVC (Model-View-Controller): A classic pattern that separates an application into three interconnected components - Model (data logic), View (presentation/UI), and Controller (user input handling).
+
+2. MVVM (Model-View-ViewModel): An evolution of MVC, MVVM adds ViewModel as a mediator between Model and View, enhancing testability and separation of concerns.
+
+3. Layered Architecture: Divides the system into logical layers (e.g., presentation, business logic, data access) to promote modularity and ease of maintenance.
+
+4. Microservices: Splits the application into small, independent services that communicate through APIs, enabling scalability and independent deployment.
+
+5. Hexagonal Architecture: Focuses on isolating core application logic from external components, enhancing portability and testability.
+
+6. Event-Driven Architecture: Components communicate through events, promoting loose coupling and enabling real-time responsiveness.
+
+7. Repository Pattern: Provides a consistent interface for accessing data, abstracting away data storage details.
+
+🔗 Why Should You Care?
+Understanding these patterns empowers you to make informed design decisions, anticipate challenges, and create systems that can evolve with changing requirements. It's like having a toolkit of solutions that fit various scenarios.
+
+💡 Next Steps:
+- Study these patterns in-depth to know when and how to apply them.
+- Keep learning about emerging patterns in the ever-evolving landscape of software architecture.
+- Apply the right pattern(s) based on the unique needs of your project.
+
+Remember, mastering architectural patterns takes time, but it's an investment that pays off in creating software that stands the test of time.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/032ca30f-dbee-45ff-9c27-bed0c8b179b3)
+
+## 🚀 SQL Roadmap for Success 🚀
+1. **Beginner Level**: 🌱
+  - Learn basic SQL syntax: SELECT, FROM, WHERE.
+  - Understand data types and NULL values.
+  - Practice simple queries on sample datasets.
+
+2. Intermediate Level: 📊
+  - Dive into JOINs: INNER, LEFT, RIGHT, FULL.
+  - Master GROUP BY and aggregate functions.
+  - Explore subqueries and data manipulation.
+
+3. Advanced Level: 📈
+  - Grasp window functions for advanced analytics.
+  - Learn about indexes and query optimization.
+  - Tackle complex queries with multiple JOINs.
+
+4. Expert Level: 🧠
+  - Study stored procedures and triggers.
+  - Delve into performance tuning.
+  - Understand database design principles.
+
+5. Real-world Applications: 🌐
+  - Work on real projects to apply skills.
+  - Collaborate with data teams for insights.
+  - Stay updated with new SQL features.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/7a70f0ad-7cda-4528-b333-b8e3bb1cb8ec)
+
+## Mastering Variable Naming: Best Practices for Clarity and Readability
+Using clear and consistent variable naming conventions in Java can greatly improve the readability and maintainability of your code. Here are some best practices for variable naming:
+
+1. Use Descriptive Names:
+  - Choose meaningful names that describe the purpose and content of the variable.
+  - Avoid single-letter variable names (except for loop counters).
+  - Use nouns for variables that represent objects or entities, and verbs for methods or actions.
+
+2. CamelCase Notation:
+  - Start variable names with a lowercase letter.
+  - Use CamelCase (capitalize the first letter of each word) for multi-word variable names.
+  - For class names, use CamelCase with an uppercase first letter.
+
+3. Avoid Abbreviations:
+  - Prefer full words over abbreviations. This enhances code clarity and maintainability.
+  - Exceptions: Common abbreviations like "max," "min," "temp," etc., can be acceptable.
+
+4. Choose Consistency:
+  - Maintain consistent naming conventions throughout your codebase.
+  - Follow the conventions of the programming community or organization you're working with.
+
+5. Use Meaningful Prefixes and Suffixes:
+  - Prefixes like "is," "has," or "should" can make boolean variables more intuitive (e.g., `isReady`, `hasPermission`).
+  - Suffixes like "Count," "List," or "Map" can clarify the purpose of collections (e.g., `studentList`, `userMap`).
+
+6. Constants Naming:
+  - Use uppercase letters for constant variables (final variables), with words separated by underscores (e.g., `MAX_VALUE`, `DEFAULT_PORT`).
+
+7. Avoid Reserved Words:
+  - Do not use Java reserved words or keywords as variable names (e.g., "int," "boolean," "class," etc.).
+
+8. Package Prefixes:
+  - In larger projects, consider adding a concise prefix to your variable names based on the package or module they belong to (e.g., `userModuleUsername`).
+
+9. Choose Singular and Plural Names Appropriately:
+  - Use singular nouns for variables that represent a single item (e.g., `user`, `order`).
+  - Use plural nouns for variables that represent collections (e.g., `users`, `orders`).
+
+10. Avoid Magic Numbers and Strings:
+  - Assign meaningful names to constants (especially numbers and strings) to improve code readability (e.g., `PI`, `ERROR_MESSAGE`).
+
+11. Use Intention-Revealing Names:
+  - Variable names should indicate their purpose or usage without requiring additional comments.
+
+12. Be Mindful of Scope:
+  - Choose variable names that are appropriate for their scope (local, instance, or class level).
+
+Consistent and meaningful variable naming practices contribute to code readability, maintainability, and collaboration among developers.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/79ce71d3-4e1a-40df-8662-59c1e623f4f7)
+
+## 🚀 𝗠𝗮𝘀𝘁𝗲𝗿 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴: 𝗧𝘂𝗿𝗻 𝗖𝗵𝗮𝗼𝘀 𝗶𝗻𝘁𝗼 𝗖𝗼𝗻𝘁𝗿𝗼𝗹 𝘄𝗶𝘁𝗵 𝗣𝗿𝗼𝗺𝗲𝘁𝗵𝗲𝘂𝘀 𝗮𝗻𝗱 𝗚𝗿𝗮𝗳𝗮𝗻𝗮! 🚀
+
+🚀 𝗠𝗮𝘀𝘁𝗲𝗿 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴: 𝗧𝘂𝗿𝗻 𝗖𝗵𝗮𝗼𝘀 𝗶𝗻𝘁𝗼 𝗖𝗼𝗻𝘁𝗿𝗼𝗹 𝘄𝗶𝘁𝗵 𝗣𝗿𝗼𝗺𝗲𝘁𝗵𝗲𝘂𝘀 𝗮𝗻𝗱 𝗚𝗿𝗮𝗳𝗮𝗻𝗮! 🚀
+
+Navigating the world of Kubernetes? Facing the challenge of monitoring a dynamic, distributed system? Turn those headaches into opportunities for excellence with these proven tools and strategies.
+
+𝗛𝗲𝗿𝗲'𝘀 𝗮 𝗽𝗹𝗮𝘆𝗯𝗼𝗼𝗸 𝘁𝗼 𝗴𝘂𝗶𝗱𝗲 𝘆𝗼𝘂𝗿 𝘀𝘂𝗰𝗰𝗲𝘀𝘀:
+
+🧨 Challenges of Kubernetes Monitoring:
+𝗗𝘆𝗻𝗮𝗺𝗶𝗰 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺: Pods constantly change, so your monitoring must keep pace.
+𝗗𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲𝗱 𝗡𝗮𝘁𝘂𝗿𝗲: Metrics are everywhere, making a unified view tricky.
+
+🎯 𝗕𝘂𝘁 𝗱𝗼𝗻'𝘁 𝘀𝘁𝗿𝗲𝘀𝘀! 𝗛𝗲𝗿𝗲'𝘀 𝘆𝗼𝘂𝗿 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻:
+
+✅ 𝗣𝗿𝗼𝗺𝗲𝘁𝗵𝗲𝘂𝘀: This open-source system scales, flexes, and simplifies your monitoring. One view for total health!
+✅ 𝗚𝗿𝗮𝗳𝗮𝗻𝗮: Custom dashboards to visualise your metrics. Clear insights into your cluster's well-being.
+
+🤝 Together, Prometheus and Grafana: They unite to empower your Kubernetes monitoring. Know that your cluster's heartbeat is strong.
+
+🛠️ 𝗠𝗼𝗿𝗲 𝘁𝗶𝗽𝘀 𝗼𝗻 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴:
+
+🔄 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗗𝗶𝘀𝗰𝗼𝘃𝗲𝗿𝘆:Let it find your pods automatically.
+🗃️ 𝗖𝗲𝗻𝘁𝗿𝗮𝗹𝗶𝘀𝗲𝗱 𝗟𝗼𝗴𝗴𝗶𝗻𝗴: Collect logs from everywhere.
+🚨 𝗔𝗹𝗲𝗿𝘁𝘀 𝗦𝗲𝘁𝘂𝗽: Be the first to know when trouble stirs.
+🔍 𝗥𝗲𝗴𝘂𝗹𝗮𝗿 𝗥𝗲𝘃𝗶𝗲𝘄: Spot trends, foresee issues.
+
+Kubernetes doesn't have to be a labyrinth. With Prometheus, Grafana, and these practical tips, you're mapping a clear path through complexity. That's not just monitoring; that's mastering your tech landscape.
+
+📚 𝗧𝗼𝗱𝗮𝘆'𝘀 𝗟𝗲𝘀𝘀𝗼𝗻: Proper monitoring in Kubernetes isn't just about avoiding failure; it's about thriving in an environment that's always changing. Learn these tools, and you don't just solve problems; you lead in the tech world. 🚀
+![1692082827457](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/cb174717-e971-46c7-b298-bad7bec65e44)
+
+## Top 4 Forms of Authentication Mechanisms
+1. SSH Keys:
+Cryptographic keys are used to access remote systems and servers securely
+
+2. OAuth Tokens:
+Tokens that provide limited access to user data on third-party applications
+
+3. SSL Certificates:
+Digital certificates ensure secure and encrypted communication between servers and clients
+
+4. Credentials:
+User authentication information is used to verify and grant access to various systems and services
+
+Over to you: How do you manage those security keys? Is it a good idea to put them in a GitHub repository?
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/979087e8-5611-4b04-a411-4391e47c46b3)
 
 ## 
