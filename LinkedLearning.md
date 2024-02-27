@@ -1355,4 +1355,188 @@ Designing a robust REST API is an art that shapes the interconnected landscape o
 
 ![1700221799574](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/77328784-8afe-410f-bf58-f0100858bd77)
 
+## Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained in One Diagram
+
+![1700239541390](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/0889ccd1-21be-445a-977d-d852d101c2a9)
+
+## 🌐 Spring Security Architecture Overview 🛡️
+🏰 Key Components:
+
+1. Authentication Manager 🤝:
+- Responsible for validating user credentials.
+- Utilizes various authentication providers (e.g., LDAP, JDBC).
+
+2. Security Context 🧑‍💼:
+- Stores details of the currently authenticated user.
+- Ensures security information is accessible throughout the application.
+
+3. Authentication Provider 🔒:
+- Implements the actual authentication process.
+- Supports multiple authentication mechanisms (e.g., username/password, OAuth).
+
+4. UserDetailsService 👩‍💼:
+- Retrieves user-related information (like roles and permissions) from the data store.
+
+5. Authorization 🚦:
+- Controls access to specific resources based on user roles and permissions.
+- Uses access control expressions (ACL) for fine-grained authorization.
+
+🔄 Authentication Flow:
+
+1. Filter Chain 🔄:
+- Requests pass through a series of filters.
+- Each filter handles a specific aspect of the authentication process.
+
+2. Username and Password Authentication 🔑:
+- Typical login involves the `UsernamePasswordAuthenticationFilter`.
+- Validates user credentials against the `AuthenticationManager`.
+
+3. Token-Based Authentication 🎫:
+- Enables stateless authentication using tokens (e.g., JWT).
+- Great for microservices architecture.
+
+🚀 Customization and Extensibility:
+
+1. Configurer Interface ⚙️:
+- Allows easy customization of security settings.
+- Implement `WebSecurityConfigurerAdapter` for more advanced configurations.
+
+2. Custom Authentication Providers 🛠️:
+- Implement your custom logic by extending `AuthenticationProvider`.
+
+🌐 Conclusion:
+
+Spring Security provides a robust and flexible security framework for Java applications. Understanding its architecture empowers developers to build secure and scalable systems. 💪✨
+
+![1699964498730](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/21ae7e59-03c8-4149-8fca-abcac7d9cb9f)
+
+## Single Sign-On (SSO) explained in simple terms.
+The concepts of SSO revolve around the three key players: the User, the Identity Provider (IDP), and the Application.
+
+1. The end-user or individual who seeks access to various applications.
+
+2. Identity Provider (IDP): An entity responsible for user authentication and verification. Common IDPs include Google, Facebook, and company-specific systems.
+
+3. Application: The software or service that the user wants to access. Applications rely on the IDP for user authentication. With SSO, users can seamlessly log in to various applications with a single set of credentials, enhancing convenience and security.
+
+Single Sign-On (SSO) simplifies user access by enabling them to log in to multiple applications with a single set of credentials, enhancing the user experience and reducing password fatigue. It also centralizes security and access management, improving security, streamlining access control, and saving time and costs.
+
+Over to you: What's your perspective on the future of secure authentication in the digital realm?
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2d03a4b8-053d-4c20-8606-41e342ff12d5)
+
+## Imperative Vs Functional Vs Object-oriented Programming
+
+In software development, different programming paradigms offer unique ways to structure code. Three main paradigms are Imperative, Functional, and Object-oriented programming, each with distinct approaches to problem-solving.
+
+1. Imperative Programming:
+- Works by changing program state through a sequence of commands.
+- Uses control structures like loops and conditional statements for execution flow.
+- Emphasizes on mutable data and explicit steps for task completion.
+- Examples: C, Python, and most procedural languages.
+
+2. Functional Programming:
+- Relies on pure functions, emphasizing computation without side effects.
+- Promotes immutability and the avoidance of mutable state.
+- Supports higher-order functions, recursion, and declarative programming.
+- Examples: Haskell, Lisp, Scala, and functional features in languages like JavaScript.
+
+3. Object-oriented Programming:
+- Focuses on modeling real-world entities as objects, containing data and methods.
+- Encourages concepts such as inheritance, encapsulation, and polymorphism.
+- Utilizes classes, objects, and interfaces to structure code.
+- Examples: Java, C++, Python, and Ruby.
+
+Over to you: Which one resonates with your coding style? Ever had an 'aha' moment while using a particular paradigm? Share your perspective.
+![1699893935849](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/0615fd24-2448-49e5-bed7-be3f16fb6737)
+
+## Docker Key Commands Map 👇
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/13b9329c-fa00-4d75-ad77-7dc1fb8239c3)
+
+## How do we design effective and safe APIs?
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/38c38c67-2af1-4e8b-a4d9-3fb33ddeb582)
+
+## Github Repos to Become Master in React
+1 Under the Hood React JS
+
+https://lnkd.in/d2PVfbFS
+
+2 Roadmap to becoming a React developer : https://lnkd.in/d5tGtcvj
+
+3 Curated List of React Components & Libraries : https://lnkd.in/dMUWujd5
+
+4 Higher-Order Components for React
+
+https://lnkd.in/dwecQ_ZC
+
+5 Beautiful React Hooks: https://lnkd.in/dVJdQG3m
+
+6 Cheatsheets for experienced React developers getting started with TypeScript
+
+https://lnkd.in/dFfuPqiA
+
+7 30 Seconds of React : https://lnkd.in/dy-MWrgW
+
+8 React Redux Links : https://lnkd.in/dZWje8S4
+
+9 Bullet Proof React : https://lnkd.in/dqKvEFaa
+
+## 🐧 Understanding Linux File Permissions 🚀
+🐧 Understanding Linux File Permissions 🚀
+
+In the Linux world, file permissions are like the gatekeepers of your data fortress! They control who can enter, read, write, or execute files and directories. Let's break it down:
+
+1. Command Structure:
+- 🕹️ `chmod`: Stands for "change mode," the command to tweak permissions.
+- 📚 `r` (read), 📝 `w` (write), and 🏃 `x` (execute) are the three permission types.
+
+2. Permission Levels:
+- 🤴 Owner: The file's creator.
+- 🌍 Group: Users in the file's group.
+- 🌐 Others: The rest of the world.
+
+3. Numeric Notation:
+- 📊 Each permission has a numeric value: 📖 `r` (read) = 4, 📝 `w` (write) = 2, 🏃 `x` (execute) = 1.
+- 🤯 Combine them to set permissions. For example, read and execute (rx) = 5, read and write (rw) = 6, all permissions (rwx) = 7.
+
+4. Setting Permissions:
+- 🛠️ `chmod` is used like this: `chmod [permissions] [file/directory]`.
+- 🚧 Example: `chmod 755 myfile` grants read, write, and execute to the owner, and read/execute to the group and others.
+
+5. Symbolic Notation:
+- 🧩 `u` (user/owner), 🤝 `g` (group), and 🌍 `o` (others) are used in symbolic notation.
+- 🌈 `+` adds, `-` removes, and `=` sets permissions.
+- 📝 Example: `chmod u+x myfile` adds execute permission for the owner.
+
+![1699571091120](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/cca5e335-e7ed-4c14-a8cf-5fa29b05e545)
+
+## Most used design patterns
+
+Ever wondered how top-notch software architects build robust and scalable systems? Look no further! Here are the 10 most used design patterns that can elevate your coding game:
+
+1 Singleton Pattern: Ensure a class has only one instance and provide a global point of access. Perfect for managing a unique resource, like a configuration manager.
+
+2 Factory Pattern: Create objects without specifying their exact class. Ideal for creating families of related or dependent objects.
+
+3 Adapter Pattern: Bridge the gap between two incompatible interfaces. Think of it as a language translator for objects!
+
+4 Facade Pattern: Provide a simplified interface to a set of interfaces, making complex systems more manageable. Like a one-stop-shop for subsystems.
+
+5 Decorator Pattern: Attach additional responsibilities to an object dynamically. Great for adding features to objects without altering their structure.
+
+6 Proxy Pattern: Control access to an object by acting as a placeholder. Handy for scenarios like lazy loading or access control.
+
+7 Command Pattern: Encapsulate a request as an object, allowing parameterization of clients with different requests and queuing of requests. Perfect for command queues and undo functionalities.
+
+8 Template Pattern: Define the skeleton of an algorithm in the superclass but let subclasses override specific steps. Useful for implementing algorithms with shared steps.
+
+9 Strategy Pattern: Define a family of algorithms, encapsulate each one, and make them interchangeable. Useful when you want to switch algorithms at runtime.
+
+10 Observer Pattern: Define a one-to-many dependency between objects, ensuring that when one object changes state, all its dependents are notified and updated. Think of it as subscribing to updates.
+
+Each pattern comes with its own superpower in solving specific problems. Mastering these design patterns can level up your software architecture game!
+
+What's your favorite design pattern, and how have you applied it in your projects? Share your thoughts below!
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/0873fd61-2ba9-4453-96ad-f7a27f9a918f)
+
 ## 
