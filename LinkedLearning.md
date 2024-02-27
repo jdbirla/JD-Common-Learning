@@ -1649,4 +1649,25 @@ The AWS SRA serves as a valuable resource for organizations seeking to establish
 
 ![1699312494770](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/c1c1de75-91ce-4bde-ba25-7025dfa91086)
 
+## Improving API performance
+Improving API performance is crucial for delivering a seamless and efficient user experience. Here are the top 6 approaches to achieve a 10x improvement in API performance:
+
+Caching: Implementing caching mechanisms can significantly boost API performance. Cache frequently accessed data or responses, reducing the load on your servers. Use in-memory caches like Redis or Memcached for high-speed data retrieval.
+
+Connection Pooling: Maintaining a connection pool helps manage and reuse database connections efficiently. This minimizes the overhead of establishing new connections for every API request, enhancing performance.
+
+Pagination: When dealing with large datasets, implement pagination to limit the amount of data returned in a single response. This reduces the payload size and response time, making the API more responsive.
+
+Payload Compression: Compressing API responses, such as using GZIP or Brotli, reduces the amount of data transferred over the network. Smaller payloads result in faster response times and lower bandwidth usage.
+
+Load Balancer: Distribute incoming API requests across multiple servers or instances using a load balancer. This ensures even distribution of traffic, prevents overloading of any single server, and provides redundancy for improved reliability.
+
+Avoid N+1 Problem: When fetching related data, avoid the N+1 query problem. Use techniques like eager loading or GraphQL to fetch all required data in a single request, reducing the number of database queries and improving response times.
+If you're new to these terms or looking to dive deeper, give this a ❤️ and share!
+Together, we can make tech jargon easier to grasp for everyone. 🌍
+
+💁‍♂️Are you ready to take that pivotal step towards landing your dream job? Look no further than NextLevel (https://lnkd.in/dZCPrEez) – your ultimate gateway to career success!
+
+![1699104673502](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/331f3f5e-7425-4eff-b284-72abcfae2ef4)
+
 ## 
