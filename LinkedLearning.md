@@ -1670,4 +1670,75 @@ Together, we can make tech jargon easier to grasp for everyone. 🌍
 
 ![1699104673502](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/331f3f5e-7425-4eff-b284-72abcfae2ef4)
 
+## Don't only apply for the job but also ensure to establish a network with the recruiter for the future.
+Interview Mail Tips-
+
+You can achieve this by sending thoughtful emails.
+
+✅ 𝗔𝗽𝗽𝗹𝘆𝗶𝗻𝗴 𝗳𝗼𝗿 𝗷𝗼𝗯 𝗘𝗺𝗮𝗶𝗹:
+
+𝗦𝘂𝗯𝗷𝗲𝗰𝘁: Application for [Job Title] - [Your Name]
+
+Dear [Hiring Manager's Name],
+
+I hope this message finds you well. I am writing to express my interest in the [Job Title] position at [Company Name] that I recently came across. I believe my skills and experience align well with the requirements of the role.
+
+With a background in [Relevant Skills/Experience], I am excited about the opportunity to contribute to [Company Name]'s [specific project/department/goal], and I am confident in my ability to make a positive impact. I have attached my resume for your consideration.
+
+I would appreciate the chance to discuss how my background and expertise could benefit your team. Please let me know if there is a convenient time for a call or a meeting.
+
+Thank you for considering my application. I look forward to the opportunity to speak with you.
+
+Best regards,
+[Your Name]
+
+✅ 𝗙𝗼𝗹𝗹𝗼𝘄-𝗨𝗽 𝗘𝗺𝗮𝗶𝗹:
+
+𝗦𝘂𝗯𝗷𝗲𝗰𝘁: Follow-Up on My Interview
+
+Hi [Hiring Manager's Name],
+
+I hope you're doing well. I wanted to follow up on the interview we had for the [Job Title] position at [Company Name]. I'm really excited about the opportunity and would love to hear about the next steps in the process.
+
+Looking forward to your response.
+
+Best regards,
+[Your Name]
+
+✅ 𝗥𝗲𝗷𝗲𝗰𝘁𝗶𝗼𝗻 𝗘𝗺𝗮𝗶𝗹:
+
+𝗦𝘂𝗯𝗷𝗲𝗰𝘁: Appreciation and Future Consideration
+
+Hi [Hiring Manager's Name],
+
+I hope this message finds you well. I wanted to express my gratitude for considering me for the [Job Title] position. Although I didn't make it to the next round, I'm thankful for the chance to learn about [Company Name]. I look forward to potentially crossing paths again in the future.
+
+Thank you once again.
+
+Best regards,
+[Your Name]
+
+✅ 𝗔𝗰𝗰𝗲𝗽𝘁𝗮𝗻𝗰𝗲 𝗘𝗺𝗮𝗶𝗹:
+
+𝗦𝘂𝗯𝗷𝗲𝗰𝘁: Accepting the [Job Title] Position
+
+Hello [Hiring Manager's Name],
+
+I hope you're doing well. I wanted to formally accept the offer for the [Job Title] position at [Company Name]. I'm really excited about joining the team and contributing to [Company Name]'s success. Please let me know the next steps and any additional information you need from my end.
+
+Thank you and looking forward to starting on [Start Date].
+
+Best regards,
+[Your Name]
+
+✅ 𝗦𝗮𝗹𝗮𝗿𝘆 𝗡𝗲𝗴𝗼𝘁𝗶𝗮𝘁𝗶𝗼𝗻 𝗘𝗺𝗮𝗶𝗹:
+
+𝗦𝘂𝗯𝗷𝗲𝗰𝘁: Salary Discussion for [Job Title] Position
+
+Hello [Hiring Manager's Name],
+
+I hope this message finds you well. I'm excited about the offer for the [Job Title] role at [Company Name]. I would like to discuss the compensation package to ensure that it aligns with my skills and experience. Could we set up a time to talk about this further?
+
+Thank you and looking forward to your response.
+
 ## 
