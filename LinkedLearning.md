@@ -1741,4 +1741,249 @@ I hope this message finds you well. I'm excited about the offer for the [Job Tit
 
 Thank you and looking forward to your response.
 
-## 
+##  HTTP “verbs”
+GET, POST, PUT... Common HTTP “verbs” in one figure. The method to download the high-resolution PDF is available at the end.
+
+1. HTTP GET
+This retrieves a resource from the server. It is idempotent. Multiple identical requests return the same result.
+
+2. HTTP PUT
+This updates or Creates a resource. It is idempotent. Multiple identical requests will update the same resource.
+
+3. HTTP POST
+This is used to create new resources. It is not idempotent, making two identical POST will duplicate the resource creation.
+
+4. HTTP DELETE
+This is used to delete a resource. It is idempotent. Multiple identical requests will delete the same resource.
+
+5. HTTP PATCH
+The PATCH method applies partial modifications to a resource.
+
+6. HTTP HEAD
+The HEAD method asks for a response identical to a GET request but without the response body.
+
+7. HTTP CONNECT
+The CONNECT method establishes a tunnel to the server identified by the target resource.
+
+8. HTTP OPTIONS
+This describes the communication options for the target resource.
+
+9. HTTP TRACE
+This performs a message loop-back test along the path to the target resource.
+
+Over to you: What other HTTP verbs have you used?
+
+![1699289122056](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/83a2ffeb-9b40-4e2d-8833-e10325f2f3a5)
+
+## Key Difference between SQL and NoSQL Databases!
+Making the right database choice is a crucial decision for your projects. Let's break down SQL and NoSQL in a quick cheat sheet to help you make an informed decision!
+
+SQL (Structured Query Language):
+
+🔸 Structure: Tables with predefined schemas.
+🔸 Data Consistency: Strong consistency and ACID transactions.
+🔸 Scalability: Vertical scaling (add more resources to a server).
+🔸 Use Cases: Well-suited for structured data and complex queries.
+🔸 Query Language: SQL for complex queries.
+
+NoSQL (Not Only SQL):
+
+🔹 Structure: Flexible, schema-less data models (e.g., JSON, XML).
+🔹 Data Consistency: Eventual consistency, often BASE (Basically Available, Soft state, Eventually consistent).
+🔹 Scalability: Horizontal scaling (add more servers to a cluster).
+🔹 Use Cases: Ideal for unstructured or semi-structured data, high-velocity data, and distributed systems.
+🔹 Examples: MongoDB, Cassandra, Redis.
+
+
+When to Choose:
+
+SQL: Choose for well-defined data structures, complex queries, and strong data consistency needs.
+NoSQL: Opt for flexibility, high scalability, and rapid development with evolving data requirements.
+
+Remember, there's no one-size-fits-all solution. Your choice depends on your project's unique needs!
+![1698975062735](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/94f56ded-23a4-4603-a9e9-cd1d1d6395d1)
+
+## How does HTTPS work?
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of HTTP that utilizes Transport Layer Security (TLS) to encrypt communication between a client and server. Any intercepted data will be unreadable and secure from tampering and eavesdropping.
+
+What's the process for encrypting and decrypting data?
+
+Step 1 - The journey begins with the client (like your browser) establishing a TCP connection with the server.
+
+Step 2 - Next comes the “client hello” where the browser sends a message containing supported cipher suites and the highest TLS version it can handle. Cipher suites are sets of algorithms that typically include: a key exchange method to share keys between devices, a bulk encryption algorithm to encrypt data, and a message authentication code algorithm to check data integrity.
+
+The server responds with a “server hello”, confirming the chosen cipher suite and TLS version that they can both understand. The server then sends a TLS certificate to the client containing its domain name, certificate authority signature, and the server’s public key. The client checks this certificate to validate it is trusted and belongs to the server.
+
+Step 3 - Once the TLS certificate is validated, the client creates a session key to be used for encrypting the bulk data transfer. Bulk data transfer refers to the transmission of the actual application data between client and server once the secure TLS connection is established. To securely send this session key to the server, it’s encrypted with the server’s public key. The server, with its private key, is the only one who can decrypt this encrypted session key.
+
+Step 4 - Now that both parties have the secret session key, they shift gears to symmetric encryption. It’s like they’ve agreed on a private language that only they understand. This makes the data transfer very secure. Symmetric encryption is much faster for large amounts of data.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e6fd8128-ce04-4124-96ff-c76a0f157c0c)
+
+## Which latency numbers you should know?
+Please note those are not precise numbers. They are based on some online benchmarks (Jeff Dean’s latency numbers + some other sources).
+
+🔹L1 and L2 caches: 1 ns, 10 ns
+E.g.: They are usually built onto the microprocessor chip. Unless you work with hardware directly, you probably don’t need to worry about them.
+
+🔹RAM access: 100 ns
+E.g.: It takes around 100 ns to read data from memory. Redis is an in-memory data store, so it takes about 100 ns to read data from Redis.
+
+🔹Send 1K bytes over 1 Gbps network: 10 us
+E.g.: It takes around 10 us to send 1KB of data from Memcached through the network.
+
+🔹Read from SSD: 100 us
+E.g.: RocksDB is a disk-based K/V store, so the read latency is around 100 us on SSD.
+
+🔹Database insert operation: 1 ms.
+E.g.: Postgresql commit might take 1ms. The database needs to store the data, create the index, and flush logs. All these actions take time.
+
+🔹Send packet CA->Netherlands->CA: 100 ms
+E.g.: If we have a long-distance Zoom call, the latency might be around 100 ms.
+
+🔹Retry/refresh internal: 1-10s
+E.g: In a monitoring system, the refresh interval is usually set to 5~10 seconds (default value on Grafana).
+
+Notes
+-----
+1 ns = 10^-9 seconds
+1 us = 10^-6 seconds = 1,000 ns
+1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/fb492ed1-9f8f-4d3a-90dd-1ba88062c058)
+
+## deployment strategies
+Over my years in IT, I've come across various deployment strategies, each with its unique approach and benefits.
+
+Today, I wanted to share a quick rundown of the "Top 7 Deployment Strategies" I've encountered:
+
+1. 𝗖𝗮𝗻𝗮𝗿𝘆 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝘀:
+This strategy is all about caution. 🐥 Instead of deploying a new version to everyone, we release it to a small subset of users. It's like sending out a 'canary in a coal mine' to test if the environment is safe. If issues arise, they affect a limited audience, making it easier to manage and rectify.
+
+2. 𝗕𝗹𝘂𝗲/𝗚𝗿𝗲𝗲𝗻 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁𝘀:
+Think of it as having a stunt double for your application. 🎭 You maintain two identical production environments - Blue (live) and Green (idle). When you have a new release, you deploy to the idle environment. Once tested and ready, you switch traffic to the new environment, ensuring zero downtime.
+
+3. 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 𝗧𝗼𝗴𝗴𝗹𝗲𝘀:
+A magician's trick for developers. 🪄 With toggles, you can dynamically turn features on or off. This means we can deploy a feature but keep it hidden until it's ready for prime time.
+
+4. 𝗔/𝗕 𝗧𝗲𝘀𝘁𝗶𝗻𝗴:
+It's like a taste test for features. 🍎🍏 By releasing two different versions to different user groups, we can gather data on which one performs better and is more preferred by users.
+
+5. 𝗗𝗮𝗿𝗸 𝗟𝗮𝘂𝗻𝗰𝗵𝗲𝘀:
+The covert ops of the deployment world. 🌘 We release new features in the background without users knowing. This helps in stress-testing and ensuring everything works seamlessly when it eventually goes live to the audience.
+
+6. 𝗥𝗼𝗹𝗹𝗶𝗻𝗴 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁:
+Think of it as a relay race. 🏃‍♂️🏃‍♀️ Instead of deploying a new version to all servers or instances at once, we do it one by one. This ensures there's always a version available to users, reducing downtime.
+
+7.𝗣𝗵𝗮𝘀𝗲𝗱 𝗥𝗼𝗹𝗹𝗼𝘂𝘁𝘀: Similar to Canary deployments but with more structured phases.Instead of moving from a small subset of users to everyone, there might be several intermediate stages, like deploying to 10%, then 25%, then 50%, and so on
+
+Understanding these strategies is vital for any software professional.
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/bd15a147-23cb-4ff9-aba5-e30576ec83e6)
+
+## YAML and why?
+Hello, tech enthusiasts! It's the weekend, and I hope no bugs are interrupting your well-deserved rest. Today, we will discuss YAML and the reasons why you should learn it as a programmer.
+
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format. It's often used for configuration files, data exchange between languages with different data structures, and as a data format in applications where human-readable text is preferred. YAML is important to learn for several reasons:
+
+📒 Human-Readable: YAML is designed to be easily read and written by humans. Its simple and intuitive structure makes it a preferred choice for configuration files, where human readability is essential.
+
+📒 Simple Syntax: YAML uses indentation and colons to define key-value pairs and data structures, making it straightforward to understand and write, even for those new to the format.
+
+📒 Language-Agnostic: YAML is not tied to a specific programming language, making it a versatile choice for data exchange between different systems. It is supported by numerous programming languages through libraries and parsers.
+
+📒 Versatile Data Structures: YAML supports a wide range of data structures, including scalars (strings, numbers, booleans, null), lists (arrays), dictionaries (objects), and nested combinations of these. This flexibility makes it suitable for various use cases.
+
+📒 Configuration Files: YAML is commonly used for configuration files in software applications. It allows developers to specify settings, options, and parameters in a human-readable format.
+
+📒 Data Serialization: YAML can be used to serialize and deserialize complex data structures, making it suitable for data storage and exchange between applications or systems.
+
+📒 Data Transformation: It is also used for data transformation in ETL (Extract, Transform, Load) processes, allowing data to be represented in a structured, human-readable format before further processing.
+
+📒 Markup Language Replacement: While not a full markup language, YAML is sometimes used as a more human-friendly alternative to markup languages like XML or JSON for simple data representation.
+
+📒 Continuous Integration and Deployment (CI/CD): Many CI/CD pipelines use YAML for defining build and deployment configurations. This allows automation and repeatability in the deployment process.
+
+If you found this post insightful, please engage with it and consider sharing ♻. Your participation is greatly valued.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/511baa60-5af9-4f9f-8653-9e36f5a8d5e2)
+
+## How To Release A Mobile App
+The mobile app release process differs from conventional methods. This illustration simplifies the journey to help you understand.
+
+Typical Stages in a Mobile App Release Process:
+
+1. Registration & Development (iOS & Android): 
+- Enroll in Apple's Developer Program and Google Play Console as iOS and Android developer
+- Code using platform-specific tools: Swift/Obj-C for iOS, and Java/Kotlin for Android
+
+2. Build & Test (iOS & Android): 
+Compile the app's binary, run extensive tests on both platforms to ensure functionality and performance. Create a release candidate build.
+
+3. QA:
+- Internally test the app for issue identification (dogfooding)
+- Beta test with external users to collect feedback
+- Conduct regression testing to maintain feature stability
+
+4. Internal Approvals:
+- Obtain approval from stakeholders and key team members.
+- Comply with app store guidelines and industry regulations
+- Obtain security approvals to safeguard user data and privacy
+
+5. App Store Optimization (ASO):
+- Optimize metadata, including titles, descriptions, and keywords, for better search visibility
+- Design captivating screenshots and icons to entice users
+- Prepare engaging release notes to inform users about new features and updates
+
+6. App Submission To Store:
+- Submit the iOS app via App Store Connect following Apple's guidelines
+- Submit the Android app via Google Play Console, adhering to Google's policies
+- Both platforms may request issues resolution for approval
+
+7. Release:
+- Upon approval, set a release date to coordinate the launch on both iOS and Android platforms
+
+Over to you:
+What's the most challenging phase you've encountered in the mobile app release process?
+
+![1698765350870](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e4f34666-4757-4653-ae2a-d695bf05995e)
+
+## Top 12 Tips for API Security
+- Use HTTPS
+- Use OAuth2
+- Use WebAuthn
+- Use Leveled API Keys
+- Authorization
+- Rate Limiting
+- API Versioning
+- Whitelisting
+- Check OWASP API Security Risks
+- Use API Gateway
+- Error Handling
+- Input Validation
+![1698680730762](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/acc61b1a-cb98-4f74-a57d-11960007e923)
+
+
+## Synchronous vs Asynchronous Explained.
+🔄 Synchronous (Sync) Processing 🔄
+
+Imagine a restaurant where the chef makes one burger at a time. 🍔🕐
+
+1. You order a burger.
+2. The chef starts making your burger and won't do anything else until it's done.
+3. Only after your burger is ready, you can order another one.
+
+This is how synchronous processing works in programming. It's like a step-by-step, one-at-a-time approach. It can make you wait, just like waiting for your burger to finish before ordering more.
+
+⏩ Asynchronous (Async) Processing ⏩
+
+Now, let's switch to a fast-food kitchen. 🍔🍟⏭
+
+1. You order a burger and fries.
+2. The chef starts making the burger but doesn't wait for it to finish.
+3. While the burger's cooking, they also start frying your fries.
+4. When each item is ready, they serve it to you, no need to wait.
+
+This is asynchronous processing in programming. It's like multitasking, where different tasks happen simultaneously, making things faster. You don't have to wait for one task to finish before starting another.
+
+So, synchronous is like a slow, one-at-a-time approach, while asynchronous is a faster, multitasking approach in programming. 🚀👨‍💻
+
