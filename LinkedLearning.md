@@ -1989,4 +1989,143 @@ So, synchronous is like a slow, one-at-a-time approach, while asynchronous is a 
 
 ![1698625303361 (1)](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e7821355-1acc-405f-bf7f-422fddfc88f8)
 
+## Navigating the Database Landscape ❗️❗️
+Choosing the right database for your project is a critical decision. Here’s a step-by-step guide to help you make an informed choice:
+
+1. 📝 Understand Your Project Requirements: Identify the specific needs of your project, including data volume, complexity, performance, scalability, and security requirements.
+2.🗂️ Data Model: Decide on the data model your project requires: structured (🏢), semi-structured (📄), or unstructured (📦) data. This choice may lead you toward SQL or NoSQL databases.
+3.🔄 SQL or NoSQL: If your data is structured and you require complex queries and transactions, consider SQL databases like PostgreSQL, MySQL, or Microsoft SQL Server (⚙️💼). For more flexibility and scalability, opt for NoSQL databases like MongoDB, Cassandra, or Redis (🔃📈).
+4.📈 Scalability: Determine whether you need horizontal (🔀) or vertical (⬆️) scalability. NoSQL databases often offer better horizontal scalability for large datasets.
+5.⚖️ CAP theorem: Understand the trade-offs between consistency (🧩), availability (🏃), and partition tolerance (🧱). Different databases prioritize these aspects differently.
+6.💼 Open Source vs. Commercial: Decide between open-source databases (🐧) and commercial databases (💲). Licensing costs and support may influence this decision.
+7.👥 Community and Ecosystem: Evaluate the community support (🤝) and available resources. An active community can be a valuable resource for problem-solving.
+8.☁️ Cloud or On-Premises: Consider whether you want to manage the database infrastructure yourself (🏢) or prefer a managed database service in the cloud (🌥️).
+9.💰 Budget: Assess the total cost of ownership, including licensing, hardware, and maintenance costs.
+10.🔐 Security: Prioritize data security (🔒). Ensure the database provides encryption, access control, and compliance with relevant regulations.
+11.🛡️ Backup and Recovery: Check the database’s backup and recovery capabilities to prevent data loss.
+12.🏁 Performance and Optimization: Think about performance tuning, indexing, and query optimization (🔍📊) to meet your project’s performance requirements.
+13.🧪 Testing and Prototyping: Consider testing the database with a small-scale prototype (🔍🔬) before committing to it for a large project.
+14.🚀 Future Growth: Think about your project’s long-term needs (🔮). Will the chosen database support future requirements and growth?
+15.🗣️ Feedback and Recommendations: Seek input from colleagues, mentors, or online communities (🌐💬) to gather insights and recommendations.
+
+By following these steps and considering your project’s specific needs, you’ll be better equipped to choose the most suitable database for your application.
+
+![1698645565323](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/862286cc-249c-4fc5-ad4d-326ed9547e76)
+
+## HTTP (Hypertext Transfer Protocol) 
+- is a fundamental protocol used for communication on the World Wide Web. It is the foundation for data communication on the internet and is responsible for the exchange of data between a client (usually a web browser) and a server.
+Here is a list of some key features and characteristics of HTTP:
+
+1. Stateless Protocol 📜
+2. Request-Response Model 🔄
+3. Text-Based Protocol 📄
+4. Connectionless 🚪
+5. Uniform Resource Identifier (URI) 🔗
+6. Methods (HTTP Verbs) 🚀
+7. Headers 📑
+8. Status Codes 🚦
+9. Content Negotiation 🤝
+10. Caching 🏞️
+11. Redirection ↩️
+12. Security 🔒
+13. Cookies and Sessions 🍪
+14. Authentication 🔐
+15. Content Types 📰
+16. Proxy Support 🌐
+17. Cross-Origin Resource Sharing (CORS) 🌐
+18. Compression 📦
+19. WebSockets 🧩
+20. HTTP/2 and HTTP/3 🚀
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/af144350-1567-49f2-8b00-0065208fc405)
+
+## Linux File Permissions Explained to a 5 year old 😁
+Imagine your toy box 🧸📦 in your room – it's like a little computer!
+
+🔒👀 Now, think of each toy as a file 📄 or a picture 🖼️ on your computer. These toys/files have three special locks:
+
+1. Owner lock 👑🔐: Only the person who owns the toy/file can play with it or change it. 🙋‍♂️🔓
+  
+2. Group lock 👥🔐: This is like a club for your friends. Only the friends in this club can play with the toy/file, but others can't. 👦👧🔓
+  
+3. Everyone lock 🌍🔐: It's like sharing with everyone! If this lock is open, anyone can see or play with the toy/file. If it's closed, they can't. 👨‍👩‍👦🚫
+
+So, when your computer is a detective 🕵️‍♂️, it checks these locks to see who can do what with the toys/files. If you're the owner, you can open your toy box and play. If you're in the group, you can play with your friends. And if the everyone lock is open, everyone can join the fun! 🎉🎈
+
+That's how Linux keeps things safe and lets the right people do the right things with their stuff. Remember, it's like your toy box, but with secret locks! 🗝️🤫
+![1698238907249](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/d7146363-6b1a-43f4-ab9c-e859d521485f)
+
+## Session, cookie, JWT, token, SSO, and OAuth 2.0 - what are they?
+These terms relate to managing user identity when logging into websites. You declare who you are (identification), your identity is verified (authentication), and you're granted appropriate permissions (authorization). Many solutions exist and continue to emerge.
+
+From simple to more complex:
+
+🔹WWW-Authenticate is very basic. The browser prompts for username and password. It lacks control over the login lifecycle, so is rarely used today.
+
+🔹Session-cookie is prevalent in browsers. Servers maintain session storage, and browsers store session IDs in cookies. While browsers primarily use cookies, mobile apps can use them in web views but often prefer tokens for native functions.
+
+🔹Tokens are encoded data used for validation, allowing clients to avoid sending credentials repeatedly. They ensure data integrity but aren't always encrypted.
+
+🔹JWT provides a standardized format for tokens. They are digitally signed to ensure their authenticity. Because JWTs can hold session or user data in their claims, servers don't need to store this information separately for verification.
+
+🔹SSO (single sign-on) lets you log in once then access multiple sites. Uses central authentication service (CAS) to maintain cross-site info.
+
+🔹OAuth 2.0 authorizes one site to access your info on another site.
+
+How do you see this landscape evolving? Will any particular standards dominate for web and mobile login?
+![1698293519750](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/1d0f1cce-0fe2-465d-85ad-528181fe27b8)
+
+## 𝐄𝐯𝐞𝐫𝐲 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐌𝐮𝐬𝐭 𝐤𝐧𝐨𝐰 𝐭𝐡𝐞 𝐓𝐨𝐩 𝟏𝟎 𝐃𝐞𝐬𝐢𝐠𝐧 𝐏𝐚𝐭𝐭𝐞𝐫𝐧𝐬 ❗️❗️
+Several design patterns are commonly used in software development to solve recurring problems. Some of the most frequently used design patterns.
+
+1.Singleton Pattern: 🕺 Ensures a class has only one instance and provides a global point of access to it.
+2.Factory Method Pattern: 🏭 Defines an interface for creating an object but allows subclasses to alter the type of objects that will be created.
+3.Abstract Factory Pattern: 🏭🏭 Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+4.Builder Pattern: 🏗️ Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+5.Prototype Pattern: 🧬 Creates new objects by copying an existing object, known as the prototype, instead of creating objects from scratch.
+6.Adapter Pattern: 🧩Allows the interface of an existing class to be used as another interface, making it compatible with client code.
+7.Decorator Pattern: 🎨 Attaches additional responsibilities to an object dynamically, providing a flexible alternative to subclassing for extending functionality.
+8.Observer Pattern: 👁️‍🗨️Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+9.Strategy Pattern: 🏹Defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets the algorithm vary independently from clients that use it.
+10.Command Pattern: ✅Encapsulates a request as an object, thereby allowing for parameterization of clients with requests, queuing of requests, and logging of requests.
+11.MVC (Model-View-Controller) Pattern: 🖥️ Separates an application into three interconnected components – the Model (data and business logic), View (presentation and user interface), and Controller (user input and control flow).
+12.Composite Pattern: 🌲 Composes objects into tree structures to represent part-whole hierarchies. Clients can treat individual objects and compositions of objects uniformly.
+13.State Pattern: 🏳️Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+14.Chain of Responsibility Pattern: 🔗Passes a request along a chain of handlers, allowing each handler to decide either to process the request or to pass it to the next handler in the chain.
+
+These design patterns help in creating maintainable, flexible, and efficient software systems by promoting good coding practices and modularity. The choice of pattern depends on the specific problem you’re trying to solve and the design goals you want to achieve.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/180a2b92-1eed-4264-9038-33a1a0a8698a)
+
+## 6 Database Types You Must Know
+1. Relational Database 💼
+  - Data Model: Organizes data into tables with rows and columns.
+  - Examples: MySQL, PostgreSQL, Oracle, SQL Server.
+  - Key Features: ACID compliance, strong data consistency, structured data storage, support for SQL queries, well-suited for complex transactions and reporting.
+
+2. Document Database 📄
+  - Data Model: Stores data in semi-structured or JSON-like documents.
+  - Examples: MongoDB, CouchDB, Firebase Firestore.
+  - Key Features: Flexible schema, horizontal scalability, support for semi-structured data, well-suited for content management systems and real-time applications.
+
+3. In-Memory Database 🚀
+  - Data Model: Stores data entirely in the system's main memory (RAM).
+  - Examples: Redis, Memcached, Apache Ignite.
+  - Key Features: Ultra-fast data retrieval, low-latency, suitable for caching, session management, and real-time analytics.
+
+4. Graph Database 🌐
+  - Data Model: Represents data as nodes and edges to model relationships.
+  - Examples: Neo4j, Amazon Neptune, ArangoDB.
+  - Key Features: Efficient querying of complex relationships, graph traversal, suitable for social networks, recommendation systems, and fraud detection.
+
+5. Time-Series Database 📈
+  - Data Model: Optimized for time-ordered data points, like sensor readings or log files.
+  - Examples: InfluxDB, Prometheus, TimescaleDB.
+  - Key Features: Efficient storage and retrieval of time-series data, aggregations, retention policies, ideal for monitoring, IoT, and event data.
+
+6. Spatial Database 🌍
+  - Data Model: Designed for storing and querying spatial or geographic data.
+  - Examples: PostGIS (extension for PostgreSQL), MongoDB Geospatial, Microsoft SQL Server Spatial.
+  - Key Features: Geospatial indexing, support for spatial data types (points, polygons, lines), useful for location-based services, GIS (Geographic Information Systems), and map applications.
+
+![1698277235447](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/8393257a-c862-4052-a8ec-57c8ddeccfe2)
+
 ## 
