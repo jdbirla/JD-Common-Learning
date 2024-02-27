@@ -2455,6 +2455,7 @@ There are two layers in Pulsar architecture: the serving layer and the persisten
 Over to you: which message queues have you used?
 
 ![1697177276062](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/041a3d1c-27bc-4db3-87ed-df08489db5a2)
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/d5def874-bd44-4562-8f49-f4e5840583f1)
 
 ## Top 6 Load Balancing Algorithms
 Top 6 Load Balancing Algorithms
@@ -2577,5 +2578,157 @@ The 12 Factor App is a methodology for building scalable and maintainable web ap
 Adhering to these 12 factors helps create applications that are easier to develop, deploy, and maintain, making them well-suited for cloud-native and containerized environments.
 
 ![1697068638860](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ce886ab6-c65d-4c83-a005-135a6618ed6d)
+
+## The 5 Deployment Patterns to Know in 2023
+Software development is a complex process involving several stages.
+
+Here is a simplified view of these stages:
+
+𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗺𝗲𝗻𝘁𝘀 𝗚𝗮𝘁𝗵𝗲𝗿𝗶𝗻𝗴: The initial step where we determine and document the software needs from users or stakeholders.
+
+𝗗𝗲𝘀𝗶𝗴𝗻: 𝗜n this phase, we architect the system, craft the user interface, and plan software component interactions.
+
+𝗜𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 (𝗖𝗼𝗱𝗶𝗻𝗴): Developers write the software code in an appropriate programming language during this stage.
+
+𝗧𝗲𝘀𝘁𝗶𝗻𝗴: The software is checked and rectified to ensure it functions as intended, free of bugs or issues.
+
+𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁: Post approval, the software is deployed, meaning it's set up in a live environment, available to end-users.
+
+𝗠𝗮𝗶𝗻𝘁𝗲𝗻𝗮𝗻𝗰𝗲: Once live, the software requires continuous upkeep, including bug fixing, updates for new requirements, or performance enhancements.
+
+Deployment is a crucial part of this process. It is not just about hitting a "launch" button; it's an art that requires strategic planning and precision. 🎯
+
+That’s where deployment patterns come in. These are strategies that ensure the software's safe transition from the development environment to your devices.
+
+Here are some common deployment patterns in software engineering:
+
+1️⃣ 🐤 𝗖𝗮𝗻𝗮𝗿𝘆 𝗥𝗲𝗹𝗲𝗮𝘀𝗲𝘀: Imagine introducing a new feature like you're testing the waters. You release it to a small group first, monitor performance, and if all's well, roll it out to everyone. That's the beauty of Canary Releases - the early bird catching the worm! 🎯
+
+2️⃣ 🔵🟢 𝗕𝗹𝘂𝗲/𝗚𝗿𝗲𝗲𝗻 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁: Picture having two production environments, as identical as twin peas in a pod. One serves live (Blue), while you deploy and test in the other (Green). Once ready, just flip the switch! Seamless transitions with near-zero downtime. 🔄
+
+3️⃣ 🚦𝗙𝗲𝗮𝘁𝘂𝗿𝗲 𝗧𝗼𝗴𝗴𝗹𝗲𝘀: Also known as feature flags, this strategy is like having a superhero's dual identity! It allows developers to turn features on/off, enabling flexible releases and testing. You control who sees what and when - in real-time! ⏰
+
+4️⃣ 🅰️/🅱️ 𝗔/𝗕 𝗧𝗲𝘀𝘁𝗶𝗻𝗴: Ever wished you could read your user's mind? A/B Testing comes close. It helps understand user preferences by comparing two versions (A and B) of a feature. It's a litmus test to identify what works best for your audience! 🎲
+
+5️⃣ 🌑 𝗗𝗮𝗿𝗸 𝗟𝗮𝘂𝗻𝗰𝗵𝗲𝘀: Ever unveiled a magic trick before the grand performance? That's what Dark Launches are like! Features are quietly released to a subset of users to gather data and rectify issues before the actual launch. No fanfare, no fuss, just a whole lot of valuable insights! 🕵️
+
+![1696963360598](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/66699046-96fe-47e1-a324-a607b874e854)
+
+##  companies ship code to production
+How do companies ship code to production? The method to download the high-resolution PDF is available at the end.
+
+The diagram below illustrates the typical workflow.
+
+Step 1: The process starts with a product owner creating user stories based on requirements.
+
+Step 2: The dev team picks up the user stories from the backlog and puts them into a sprint for a two-week dev cycle.
+
+Step 3: The developers commit source code into the code repository Git.
+
+Step 4: A build is triggered in Jenkins. The source code must pass unit tests, code coverage threshold, and gates in SonarQube.
+
+Step 5: Once the build is successful, the build is stored in artifactory. Then the build is deployed into the dev environment.
+
+Step 6: There might be multiple dev teams working on different features. The features need to be tested independently, so they are deployed to QA1 and QA2.
+
+Step 7: The QA team picks up the new QA environments and performs QA testing, regression testing, and performance testing.
+
+Steps 8: Once the QA builds pass the QA team’s verification, they are deployed to the UAT environment.
+
+Step 9: If the UAT testing is successful, the builds become release candidates and will be deployed to the production environment on schedule.
+
+Step 10: SRE (Site Reliability Engineering) team is responsible for prod monitoring.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/7af831c2-1398-4c3a-befa-c54a84ee819c)
+
+## What happens when you type a URL into a browser?
+
+What happens when you type a URL into a browser? The method to download the high-resolution PDF is available at the end.
+
+Let’s look at the process step by step.
+
+Step 1: The user enters a URL (www. bytebytego. com) into the browser and hits Enter. The first thing we need to do is to translate the URL to an IP address. The mapping is usually stored in a cache, so the browser looks for the IP address in multiple layers of cache: the browser cache, OS cache, local cache, and ISP cache. If the browser couldn’t find the mapping in the cache, it will ask the DNS (Domain Name System) resolver to resolve it.
+
+Step 2: If the IP address cannot be found at any of the caches, the browser goes to DNS servers to do a recursive DNS lookup until the IP address is found.
+
+Step 3: Now that we have the IP address of the server, the browser sends an HTTP request to the server. For secure access of server resources, we should always use HTTPS. It first establishes a TCP connection with the server via TCP 3-way handshake. Then it sends the public key to the client. The client uses the public key to encrypt the session key and sends to the server. The server uses the private key to decrypt the session key. The client and server can now exchange encrypted data using the session key.
+
+Step 4: The server processes the request and sends back the response. For a successful response, the status code is 200. There are 3 parts in the response: HTML, CSS and Javascript. The browser parses HTML and generates DOM tree. It also parses CSS and generates CSSOM tree. It then combines DOM tree and CSSOM tree to render tree. The browser renders the content and display to the user.
+![1696866325286](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e6f85100-9486-4583-9c60-0534945d2046)
+
+## sheet of various databases in cloud services
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/2333e327-5738-46a7-9ae5-49f819b7f24e)
+
+## Very Powerful Words. Read it.
+**What You #Can #Control** 💪
+
+1. **Your #Actions** 🚶‍♂️: You have the power to decide what you do and how you behave in various situations.
+
+2. **Your #Choices** 🤔: You can make decisions about your life, goals, and values.
+
+3. **Your #Reactions** 😃: You can choose how you respond to challenges, setbacks, and emotions.
+
+4. **Your #Attitude** 🧠: Your outlook on life is within your control, influencing how you perceive and approach situations.
+
+5. **Your #Effort** ⭐: The level of effort and dedication you put into your endeavors is up to you.
+
+**What You Can't #Control** 🤷‍♀️
+
+1. **External #Events** 🌍: You can't control natural disasters, economic changes, or global events.
+
+2. **Other #People's Actions** 👥: You can't control how others behave, but you can control your reactions to their actions.
+
+3. **Past #Events** ⏳: You can't change what has already happened, but you can control how you move forward.
+
+4. **Uncertain #Future** 🎯: The future is unpredictable; you can't control every #outcome, but you can plan and adapt.
+
+Remember, focusing on what you can control can lead to greater personal #empowerment and resilience.
+
+more #positive thoughts
+
+#1. #Gratitude: Focus on what you're thankful for in your life.
+#2. #Optimism: Embrace a positive outlook for the future.
+#3. #SelfBelief: Believe in your abilities and potential.
+#4. #Positivity: Surround yourself with positive energy and people.
+#5. #Empowerment: Take control of your life and goals.
+#6. #Resilience: Bounce back from challenges stronger than before.
+#7. #Kindness: Spread kindness and positivity to others.
+#8. #Mindfulness: Stay present and appreciate each moment.
+#9. #Growth: Embrace personal and professional growth opportunities.
+#10. #Happiness: Pursue activities and relationships that bring joy.
+
+These positive thoughts can help improve your mindset and overall well-being
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/effefed1-1935-4199-8870-17954bd97d71)
+
+## caching systems
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ac24c797-1df5-45ca-b233-ffa28859188d)
+
+## JWT Explained
+1. JSON Format: JWTs are represented as JSON objects, making them easy to read by both humans and machines. They consist of three parts separated by dots (`.`): the Header, the Payload, and the Signature.
+
+- Header: The Header typically consists of two parts: the type of the token (JWT) and the signing algorithm being used (e.g., HMAC SHA256 or RSA). It's Base64Url encoded to form the first part of the JWT.
+
+- Payload: The Payload contains the claims, which are statements about an entity (usually, the user) and additional data. Claims can be categorized into three types:
+
+- Registered Claims: These are predefined claims with specific meanings, such as "iss" (issuer), "sub" (subject), "aud" (audience), "exp" (expiration time), and "iat" (issued at time).
+
+- Public Claims: These are user-defined claims that can be freely used, but it's a good practice to avoid common names to prevent conflicts.
+
+- Private Claims: These are custom claims used between parties that agree on their meaning.
+
+- Signature: The Signature is used to verify that the sender of the JWT is who it says it is and to ensure that the message wasn't tampered with during transmission. The Signature is created by taking the encoded Header, encoded Payload, a secret (or private key in the case of RSA), and the chosen algorithm, then running them through the algorithm to produce a hash. This hash is used to verify the integrity of the token.
+
+2. Encoding: Each of the three JWT components (Header, Payload, and Signature) is Base64Url encoded, which is a URL-safe variant of Base64 encoding. This encoding ensures that the JWT remains compact and can be safely transmitted in URLs, query parameters, or HTTP headers.
+
+3. Usage: JWTs are often used in authentication and authorization workflows. Here's how it typically works:
+
+- Authentication: When a user logs in or authenticates, the server generates a JWT and signs it with a secret key. This JWT is then sent back to the client, which can store it locally (e.g., in a cookie or local storage) and include it in subsequent requests to prove its identity.
+
+- Authorization: The server, when receiving a request with a JWT, can verify the token's signature using the secret key. If the signature is valid, the server can trust the claims within the token to make authorization decisions, such as determining if the user has the right permissions to access a resource.
+
+4. Statelessness: The server doesn't need to store session data because all the necessary information is contained within the token itself. This can simplify the design of distributed systems.
+
+5. Expiration: JWTs can have an expiration time (specified in the "exp" claim), which means they are only valid for a certain period
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/20024722-91aa-4810-bf85-3e461a52727b)
 
 ## 
