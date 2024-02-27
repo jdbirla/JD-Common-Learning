@@ -1987,3 +1987,6 @@ This is asynchronous processing in programming. It's like multitasking, where di
 
 So, synchronous is like a slow, one-at-a-time approach, while asynchronous is a faster, multitasking approach in programming. 🚀👨‍💻
 
+![1698625303361 (1)](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/e7821355-1acc-405f-bf7f-422fddfc88f8)
+
+## 
