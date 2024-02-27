@@ -2212,3 +2212,18 @@ Did I miss any crucial concept?
 
 [1698043583699.pdf](https://github.com/jdbirla/JD-Common-Learning/files/14416358/1698043583699.pdf)
 
+## How Do C++, Java, and Python Function? We just made a video on this topic.
+How Do C++, Java, and Python Function? We just made a video on this topic.
+
+The illustration details the processes of compilation and execution.
+
+Languages that compile transform source code into machine code using a compiler. This machine code can subsequently be run directly by the CPU. For instance: C, C++, Go.
+
+In contrast, languages like Java first convert the source code into bytecode. The Java Virtual Machine (JVM) then runs the program. Occasionally, a Just-In-Time (JIT) compiler translates the source code into machine code to enhance execution speed. Some examples are Java and C#.
+
+Languages that are interpreted don't undergo compilation. Instead, their code is processed by an interpreter during execution. Python, Javascript, and Ruby are some examples.
+
+Generally, compiled languages have a speed advantage over interpreted ones.
+![1698075576783](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/48f41339-57a0-45f3-815e-44910396fc88)
+
+## 
