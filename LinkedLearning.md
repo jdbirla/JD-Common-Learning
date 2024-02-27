@@ -1042,3 +1042,39 @@ SELECT
  MODE() WITHIN GROUP (ORDER BY salary) AS mode_earning
 FROM earnings_table;
 ```
+
+## 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝗥𝗼𝗮𝗱𝗺𝗮𝗽: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞 𝐭𝐨 𝐁𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐌𝐨𝐝𝐞𝐫𝐧 𝐀𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞𝐬 🚀
+𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀:
+- SQL: Traditional relational databases for structured data.
+- NoSQL: Flexible, scalable databases for unstructured data.
+- MySQL, PostgreSQL: Popular SQL databases.
+- MongoDB, Cassandra, DynamoDB, HBase: Leading NoSQL databases.
+
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗕𝗿𝗼𝗸𝗲𝗿:
+- Kafka, RabbitMQ, Amazon SQS: Efficient and reliable message brokers for seamless communication between microservices.
+
+𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴:
+- Grafana, Kibana, Prometheus: Monitoring tools providing visibility into microservices' performance and health.
+
+𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀:
+- Java, .Net, Go, NodeJS, Python: A diverse set of languages catering to different development preferences and requirements.
+
+𝗖𝗜/𝗖𝗗:
+- GitHub Actions, Jenkins, TeamCity, Gitlab, CircleCI: CI/CD tools automating the development, testing, and deployment process.
+
+𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆:
+- JWT, OAuth 2.0, API Authz., TLS: Essential security protocols and encryption methods ensuring data integrity and access control.
+
+𝗖𝗹𝗼𝘂𝗱 𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗿:
+- AWS, Azure, GCP, Linode, Digital Ocean: Cloud providers offering infrastructure and services for hosting microservices.
+
+𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗢𝗿𝗰𝗵𝗲𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻:
+- ECS, Open Shift, Hashicorp, Kubernetes: Orchestrators facilitating the deployment, scaling, and management of containerized applications.
+
+𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿𝘀:
+- Docker, Podman: Containerization technologies ensuring consistency and portability across different environments.
+
+![1703426210710](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/71a1eb62-2c49-4b7b-9c02-5fc6225ebd1b)
+
+
+##
