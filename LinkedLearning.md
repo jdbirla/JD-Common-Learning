@@ -2946,4 +2946,82 @@ User authentication information is used to verify and grant access to various sy
 Over to you: How do you manage those security keys? Is it a good idea to put them in a GitHub repository?
 ![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/979087e8-5611-4b04-a411-4391e47c46b3)
 
-## 
+## Learn to Implement CI/CD Seamlessly in Agile:
+Dissolve confusion around merging Agile with CI/CD using this concise guide.
+
+Discover a cohesive Agile-CI/CD approach:
+
+Unveil a simplified guide that merges Agile development seamlessly with CI/CD. This isn't just a CI/CD workflow, but an integrated Agile development process.
+
+Tailor the template:
+
+Customize the baseline diagram with tools that suit your team's preferences and needs.
+
+Initiate with User Stories:
+
+Let the Product Owner begin by crafting engaging user stories.
+
+Development in Action:
+
+Empower the development team to breathe life into stories using tools like Jira/Rally.
+
+Enable Transparency and Integration:
+
+Leverage Slack/Teams, GitHub, and Bitbucket for:
+
+- Fostering transparency and collaboration.
+- Enabling continuous integration.
+- Early bug detection.
+- Supporting frequent releases and continuous testing.
+
+Amplify with SonarQube and DevOps:
+
+Unleash the power of SonarQube and DevOps to:
+a) Conduct static code analysis.
+b) trigger builds.
+c) Offer insightful feedback.
+
+Implement Unit Tests and Code Coverage:
+
+Utilize JaCoCo and JUnit for:
+a) Jenkins and Maven for build and deployment
+b) Aiming for 100% unit test success
+c) Maintaining a minimum of 80% code coverage
+d) Eliminating critical defects or vulnerabilities
+
+Excel in Testing and Quality:
+
+Achieve mastery in testing and quality assurance through:
+
+a) Selenium for regression and UAT tests
+b) Nexus/Artifactory for Binary Repo
+
+Elevate Security and Infrastructure:
+
+Prioritize security scans with Qualys.
+Manage infrastructure with Terraform and Ansible.
+
+Effective CI/CD Implementation:
+
+Consider these tips:
+
+1. Start Small: Begin with a single project before expanding.
+
+2. Gain Team Buy-In: Garner support for this transformative change.
+
+3. Embrace Automation: Automate tasks for efficiency.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/ade3f4a4-ed7d-4bee-b623-b629108ea963)
+
+
+## 120 Mind-Blowing AI Tools for Video, Productivity, Marketing, Chatbot, Design & Writing.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/552b0808-b685-40a6-a8dc-e2b59373ec1d)
+
+## Cloud-native vs. Cloud computing
+loud-native vs. Cloud computing
+
+The term "Cloud Native" seemed to first appear around 10 years ago when Netflix discussed their web-scale application architecture at a 2013 AWS re:Invent talk.
+
+At that time, the meaning of the term was likely different than it is today. However, one thing remains the same: there were no clear definitions for it then, and there still are not any clear definitions now. It means different things to different people.
+
+In this video, we provide our interpretation of the term "Cloud Native" and discuss when it is important.
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/a4ee9a73-6da2-4e58-a901-90e5fdcc3a31)
