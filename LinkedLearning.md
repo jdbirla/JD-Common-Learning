@@ -1077,4 +1077,215 @@ FROM earnings_table;
 ![1703426210710](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/71a1eb62-2c49-4b7b-9c02-5fc6225ebd1b)
 
 
-##
+## 𝗟𝗲𝗮𝗿𝗻 𝗔𝗯𝗼𝘂𝘁 𝘁𝗵𝗲 𝗗𝗶𝘃𝗲𝗿𝘀𝗲 𝗪𝗼𝗿𝗹𝗱 𝗼𝗳 𝗔𝗣𝗜 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀:
+
+Let's dive into the world of API protocols, the hidden heroes behind the seamless flow of data and communication in our digital lives.
+
+𝟭. 𝗚𝗿𝗮𝗽𝗵𝗤𝗟: Imagine a flexible way to request specific data from an API. That's GraphQL! It allows developers to tailor responses and optimize performance.
+
+𝟮. 𝗪𝗲𝗯𝗵𝗼𝗼𝗸𝘀: Think of instant updates and notifications between systems. Webhooks use HTTP callbacks to make this happen, keeping everything in sync.
+
+𝟯. 𝗥𝗘𝗦𝗧: This is the classic API design, built on simplicity and statelessness. It's the foundation for countless web applications and services.
+
+𝟰. 𝗦𝗲𝗿𝘃𝗲𝗿-𝗦𝗲𝗻𝘁 𝗘𝘃𝗲𝗻𝘁𝘀 (𝗦𝗦𝗘): Experience real-time data updates with SSE. This lightweight protocol is ideal for dynamic content and instant information.
+
+𝟱. 𝗘𝗹𝗲𝗰𝘁𝗿𝗼𝗻𝗶𝗰 𝗗𝗮𝘁𝗮 𝗜𝗻𝘁𝗲𝗿𝗰𝗵𝗮𝗻𝗴𝗲 (𝗘𝗗𝗜): Standardizes the exchange of business documents, making transactions smoother and faster.
+
+𝟲. 𝗘𝘃𝗲𝗻𝘁-𝗗𝗿𝗶𝘃𝗲𝗻 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 (𝗘𝗗𝗔): Systems communicate through events in this model, making them loosely coupled and scalable.
+
+𝟳. 𝗪𝗲𝗯𝘀𝗼𝗰𝗸𝗲𝘁𝘀: Imagine real-time chat applications or collaborative editing. Websockets enable this by allowing two-way communication between clients and servers.
+
+𝟴. 𝗦𝗶𝗺𝗽𝗹𝗲 𝗢𝗯𝗷𝗲𝗰𝘁 𝗔𝗰𝗰𝗲𝘀𝘀 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹 (𝗦𝗢𝗔𝗣): This protocol defines a set of structured rules for communication, making it reliable and secure for specific scenarios.
+
+𝟵. 𝗴𝗥𝗣𝗖 (𝗥𝗲𝗺𝗼𝘁𝗲 𝗣𝗿𝗼𝗰𝗲𝗱𝘂𝗿𝗲 𝗖𝗮𝗹𝗹𝘀): High-performance and efficient, gRPC uses protocol buffers to facilitate faster communication between services.
+
+𝟭𝟬. 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗤𝘂𝗲𝘂𝗶𝗻𝗴 𝗧𝗲𝗹𝗲𝗺𝗲𝘁𝗿𝘆 𝗧𝗿𝗮𝗻𝘀𝗽𝗼𝗿𝘁 (𝗠𝗤𝗧𝗧): This lightweight protocol excels in scenarios like IoT devices and low-latency communication.
+
+𝟭𝟭. 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗤𝘂𝗲𝘂𝗶𝗻𝗴 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹 (𝗔𝗠𝗤𝗣): Versatile and feature-rich, AMQP is ideal for building scalable and robust messaging systems.
+
+![1702293451390](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/a4b42c15-27a6-404d-aba4-7f7dc06e4304)
+
+## The Evolving Landscape of API Protocols in 2023
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/08a3bbc9-e8d2-4e7e-bd26-87261ecd415a)
+
+
+## Docker's growing adoption 
+
+Docker's growing adoption makes it a crucial skill across various tech roles - from developers to QA engineers.
+
+Here's a neat guide to fundamental Docker concepts and commands, vital for anyone in tech today.
+
+🔹 Setup & Image Management:
+  - Build an image: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚋𝚞𝚒𝚕𝚍 -𝚝 𝚖𝚢𝚊𝚙𝚙 .
+  - Fetch an image: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚞𝚕𝚕 𝚞𝚋𝚞𝚗𝚝𝚞
+  - Store image remotely: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚞𝚜𝚑 𝚖𝚢𝚞𝚜𝚎𝚛/𝚖𝚢𝚊𝚙𝚙
+  - List local images: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚒𝚖𝚊𝚐𝚎𝚜
+  - Remove an image: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚖𝚒 𝚒𝚖𝚊𝚐𝚎_𝚗𝚊𝚖𝚎
+  - Image layers history: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚑𝚒𝚜𝚝𝚘𝚛𝚢 𝚒𝚖𝚊𝚐𝚎_𝚗𝚊𝚖𝚎
+  - Tag an image: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚝𝚊𝚐 𝚜𝚘𝚞𝚛𝚌𝚎_𝚒𝚖𝚊𝚐𝚎 𝚝𝚊𝚛𝚐𝚎𝚝_𝚒𝚖𝚊𝚐𝚎
+  - Save image to file: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚜𝚊𝚟𝚎 -𝚘 𝚘𝚞𝚝𝚙𝚞𝚝𝚏𝚒𝚕𝚎.𝚒𝚖𝚐 𝚖𝚢𝚒𝚖𝚊𝚐𝚎
+  - Load image from file: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚕𝚘𝚊𝚍 -𝚒 𝚒𝚗𝚙𝚞𝚝𝚏𝚒𝚕𝚎.𝚒𝚖𝚐
+
+🔹 Running & Managing Containers:
+  - Start a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚞𝚗 𝚒𝚖𝚊𝚐𝚎_𝚗𝚊𝚖𝚎
+  - Stop a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚜𝚝𝚘𝚙 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Force stop a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚔𝚒𝚕𝚕 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Restart a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚎𝚜𝚝𝚊𝚛𝚝 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Rename a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚎𝚗𝚊𝚖𝚎 𝚘𝚕𝚍_𝚗𝚊𝚖𝚎 𝚗𝚎𝚠_𝚗𝚊𝚖𝚎
+  - View container logs: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚕𝚘𝚐𝚜 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Interact with container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚎𝚡𝚎𝚌 -𝚒𝚝 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍 𝚋𝚊𝚜𝚑
+  - Pause container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚊𝚞𝚜𝚎 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Resume container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚞𝚗𝚙𝚊𝚞𝚜𝚎 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+
+🔹 Network & Storage:
+  - List networks: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚗𝚎𝚝𝚠𝚘𝚛𝚔 𝚕𝚜
+  - Create a volume: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚟𝚘𝚕𝚞𝚖𝚎 𝚌𝚛𝚎𝚊𝚝𝚎 𝚖𝚢𝚟𝚘𝚕𝚞𝚖𝚎
+  - List volumes: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚟𝚘𝚕𝚞𝚖𝚎 𝚕𝚜
+
+🔹 Clean-up & Maintenance:
+  - Clean up resources: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚜𝚢𝚜𝚝𝚎𝚖 𝚙𝚛𝚞𝚗𝚎
+  - Delete a container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚖 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Container details: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚒𝚗𝚜𝚙𝚎𝚌𝚝 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Real-time stats: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚜𝚝𝚊𝚝𝚜
+  - List running containers: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚜
+  - List all containers: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚜 -𝚊
+
+🔹 Docker Compose (Multiple Containers):
+  - Start multi-container app: 𝚍𝚘𝚌𝚔𝚎𝚛-𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚞𝚙
+  - Stop services: 𝚍𝚘𝚌𝚔𝚎𝚛-𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚜𝚝𝚘𝚙
+  - Remove resources: 𝚍𝚘𝚌𝚔𝚎𝚛-𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚍𝚘𝚠𝚗
+  - View logs: 𝚍𝚘𝚌𝚔𝚎𝚛-𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚕𝚘𝚐𝚜
+  - Restart services: 𝚍𝚘𝚌𝚔𝚎𝚛-𝚌𝚘𝚖𝚙𝚘𝚜𝚎 𝚛𝚎𝚜𝚝𝚊𝚛𝚝
+
+🔹 Advanced Utilities & Miscellaneous:
+  - Copy files from container: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚌𝚙 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍:/𝚙𝚊𝚝𝚑
+  - Changes in FS: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚍𝚒𝚏𝚏 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Running processes: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚝𝚘𝚙 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Search Docker Hub: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚜𝚎𝚊𝚛𝚌𝚑 𝚝𝚎𝚛𝚖
+  - Public ports: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚘𝚛𝚝 𝚌𝚘𝚗𝚝𝚊𝚒𝚗𝚎𝚛_𝚒𝚍
+  - Docker Hub login: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚕𝚘𝚐𝚒𝚗
+  - Docker Hub logout: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚕𝚘𝚐𝚘𝚞𝚝
+
+![image](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/878eaffb-79c2-4d14-b833-a25c10bc15b7)
+
+## Docker Architecture and Components
+1. Docker Daemon (`dockerd`):
+- 𝗥𝗼𝗹𝗲: Manages Docker containers on a system.
+- 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀: Building, running, and managing containers.
+  
+2. Docker Client (`docker`):
+- 𝗥𝗼𝗹𝗲: Interface through which users interact with Docker.
+- 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: build, pull, run, etc.
+  
+3. Docker Images:
+- 𝗗𝗲𝗳𝗶𝗻𝗶𝘁𝗶𝗼𝗻: Read-only templates used to create containers.
+- 𝗥𝗼𝗹𝗲: Serve as the basis for creating containers.
+- 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆/𝗛𝘂𝗯: A storage and distribution system for Docker images.
+
+4. Docker Containers:
+- 𝗗𝗲𝗳𝗶𝗻𝗶𝘁𝗶𝗼𝗻: Runnable instances of Docker images.
+- 𝗥𝗼𝗹𝗲: Encapsulate the application and its environment.
+
+5. Docker Registry:
+- 𝗥𝗼𝗹𝗲: Store Docker images.
+- 𝗣𝘂𝗯𝗹𝗶𝗰 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆: Docker Hub.
+- 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆: Can be hosted by users.
+
+
+Docker Workflow
+
+A. Development Phase
+
+1. 𝗪𝗿𝗶𝘁𝗲 𝗖𝗼𝗱𝗲:
+   - Developers write code locally.
+   
+2. 𝗕𝘂𝗶𝗹𝗱 𝗗𝗼𝗰𝗸𝗲𝗿 𝗜𝗺𝗮𝗴𝗲:
+   - 𝗗𝗼𝗰𝗸𝗲𝗿𝗳𝗶𝗹𝗲: A script with instructions to create a Docker image.
+   - 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚋𝚞𝚒𝚕𝚍 -𝚝 𝚖𝚢-𝚒𝚖𝚊𝚐𝚎 .
+   
+3. 𝗧𝗲𝘀𝘁 𝗟𝗼𝗰𝗮𝗹𝗹𝘆:
+   - Run the application inside a Docker container locally.
+   - 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚞𝚗 𝚖𝚢-𝚒𝚖𝚊𝚐𝚎
+   
+B. Share/Deploy Phase
+
+4. 𝗣𝘂𝘀𝗵 𝗜𝗺𝗮𝗴𝗲 𝘁𝗼 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆:
+   - Push the Docker image to a registry (Docker Hub, AWS ECR, etc.).
+   - 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚞𝚜𝚑 𝚖𝚢-𝚒𝚖𝚊𝚐𝚎
+   
+5. 𝗗𝗲𝗽𝗹𝗼𝘆 𝗼𝗻 𝗮 𝗦𝗲𝗿𝘃𝗲𝗿/𝗖𝗹𝘂𝘀𝘁𝗲𝗿:
+   - Pull the Docker image from the registry.
+   - 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚙𝚞𝚕𝚕 𝚖𝚢-𝚒𝚖𝚊𝚐𝚎
+   - Run the container on a server or a cluster (like Kubernetes).
+   - 𝗖𝗼𝗺𝗺𝗮𝗻𝗱: 𝚍𝚘𝚌𝚔𝚎𝚛 𝚛𝚞𝚗 𝚖𝚢-𝚒𝚖𝚊𝚐𝚎
+
+C. CI/CD Integration
+
+6. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻 (𝗖𝗜):
+   - Integrate code changes and build the Docker image.
+   - Push the built image to a registry.
+   
+7. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗗𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁 (𝗖𝗗):
+   - Deploy the Docker image from the registry to production environments.
+   
+D. Scaling & Management
+
+8. 𝗦𝗰𝗮𝗹𝗶𝗻𝗴:
+   - Increase or decrease the number of running containers based on demand.
+   
+9. 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 & 𝗟𝗼𝗴𝗴𝗶𝗻𝗴:
+   - Track the performance and logs of running containers.
+
+10. 𝗨𝗽𝗱𝗮𝘁𝗲 & 𝗥𝗼𝗹𝗹𝗯𝗮𝗰𝗸:
+   - Deploy updates by pushing new Docker images to the registry and updating running containers.
+   - Rollback to a previous version if needed by running containers from an older Docker image.
+
+E. Networking & Storage
+
+11. 𝗡𝗲𝘁𝘄𝗼𝗿𝗸𝗶𝗻𝗴:
+   - Manage communication between containers and the outside world.
+
+12. 𝗦𝘁𝗼𝗿𝗮𝗴𝗲:
+   - Manage data and persist state using volumes.
+![1699974906033](https://github.com/jdbirla/JD-Common-Learning/assets/69948118/d1e6633d-cb12-49b0-90d0-a9b0e1b65887)
+
+## Log Parsing Cheatsheet
+In the IT industry, the fundamental skill of log parsing remains as vital as ever.
+
+It's the backbone of troubleshooting, security analysis, and system monitoring.
+
+To aid in this crucial task, I've compiled a comprehensive Log Parsing Cheatsheet that is perfect for IT professionals of all stripes.
+
+Here’s a breakdown of each command and how you can use it:
+
+🔎 𝗛𝗘𝗔𝗗: 𝚑𝚎𝚊𝚍 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 gives you the top ten lines of a file, which is often where critical recent error logs can be found. For instance, 𝚑𝚎𝚊𝚍 -𝚗 𝟸𝟶 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 displays the first 20 lines.
+
+🔍 𝗧𝗔𝗜𝗟: 𝚝𝚊𝚒𝚕 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 does the opposite, showing you the last ten lines of a file — where the most recent events are logged. Try 𝚝𝚊𝚒𝚕 -𝚏 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 to get a real-time stream of log updates.
+
+🔄 𝗖𝗢𝗠𝗠: 𝚌𝚘𝚖𝚖 𝚏𝚒𝚕𝚎𝟷.𝚕𝚘𝚐 𝚏𝚒𝚕𝚎𝟸.𝚕𝚘𝚐 helps you compare two sorted files. It's perfect for finding discrepancies between log versions, like 𝚌𝚘𝚖𝚖 -𝟹 𝚜𝚎𝚛𝚟𝚎𝚛𝟷.𝚕𝚘𝚐 𝚜𝚎𝚛𝚟𝚎𝚛𝟸.𝚕𝚘𝚐 to see lines unique to each.
+
+🔣 𝗟𝗘𝗦𝗦: 𝚕𝚎𝚜𝚜 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 allows for on-the-fly viewing of large log files. Navigate with 𝙶, 𝚐𝚐, and /𝚜𝚎𝚊𝚛𝚌𝚑_𝚝𝚎𝚛𝚖.
+
+📊 𝗖𝗦𝗩𝗞𝗜𝗧: 𝚌𝚜𝚟𝚌𝚞𝚝 -𝚌 𝟹 𝚍𝚊𝚝𝚊.𝚌𝚜𝚟 can extract columns from CSVs. For example, 𝚌𝚜𝚟𝚌𝚞𝚝 -𝚗 𝚍𝚊𝚝𝚊.𝚌𝚜𝚟 lists column names.
+
+📑 𝗝𝗤: 𝚓𝚚 .𝚏𝚘𝚘 𝚍𝚊𝚝𝚊.𝚓𝚜𝚘𝚗 is for JSON parsing — invaluable for modern web app logs. Use 𝚓𝚚 '.[] | .𝚗𝚊𝚖𝚎' 𝚞𝚜𝚎𝚛𝚜.𝚓𝚜𝚘𝚗 to extract user names from a list.
+
+🔍 𝗚𝗥𝗘𝗣: 𝚐𝚛𝚎𝚙 '𝚎𝚛𝚛𝚘𝚛' 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 finds all occurrences of 'error' in a file. Advanced usage like 𝚐𝚛𝚎𝚙 -𝙴 "𝟺[𝟶-𝟿]{𝟸}" 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 finds all 400-level errors in HTTP logs.
+
+📡 𝗡𝗚𝗥𝗘𝗣: 𝚗𝚐𝚛𝚎𝚙 -𝚍 𝚎𝚝𝚑𝟶 '𝟺𝟶𝟺' 𝚙𝚘𝚛𝚝 𝟾𝟶 listens on the network for specific data, useful for real-time traffic analysis.
+
+🔧 𝗧𝗥: 𝚝𝚛 '[:𝚕𝚘𝚠𝚎𝚛:]' '[:𝚞𝚙𝚙𝚎𝚛:]' < 𝚏𝚒𝚕𝚎.𝚝𝚡𝚝 transforms lowercase to uppercase. Remove duplicates with 𝚝𝚛 -𝚜 '\𝚗'.
+
+🔪 𝗖𝗨𝗧: 𝚌𝚞𝚝 -𝚍 ',' -𝚏 𝟸 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 can parse fields from delimited logs, making it simple to see specific data columns.
+
+🔨 𝗦𝗘𝗗: 𝚜𝚎𝚍 '𝚜/𝚘𝚕𝚍/𝚗𝚎𝚠/𝚐' 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 finds and replaces text — 𝚜𝚎𝚍 '/^$/𝚍' 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 removes empty lines.
+
+🔢 𝗦𝗢𝗥𝗧: 𝚜𝚘𝚛𝚝 𝚏𝚒𝚕𝚎.𝚝𝚡𝚝 sorts text files line by line. For numeric sort, use 𝚜𝚘𝚛𝚝 -𝚗 𝚏𝚒𝚕𝚎.𝚝𝚡𝚝.
+
+🌟 𝗨𝗡𝗜𝗤: 𝚞𝚗𝚒𝚚 -𝚌 𝚏𝚒𝚕𝚎.𝚝𝚡𝚝 counts and removes duplicates. Case-insensitive search can be done using 𝚞𝚗𝚒𝚚 -𝚒 𝚏𝚒𝚕𝚎.𝚝𝚡𝚝.
+
+📃 𝗗𝗜𝗙𝗙: 𝚍𝚒𝚏𝚏 𝚏𝚒𝚕𝚎𝟷.𝚕𝚘𝚐 𝚏𝚒𝚕𝚎𝟸.𝚕𝚘𝚐 compares files line by line, crucial for version differences.
+
+🖋️ 𝗔𝗪𝗞: 𝚊𝚠𝚔 '{𝚙𝚛𝚒𝚗𝚝 $𝟸}' 𝚏𝚒𝚕𝚎.𝚕𝚘𝚐 prints the second word in each line. It’s perfect for text processing scripts, like summarizing logs.
+
+## 
